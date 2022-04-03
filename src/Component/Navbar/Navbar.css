@@ -1,0 +1,103 @@
+@import url(https://use.fontawesome.com/releases/v5.15.4/css/all.css);
+
+.nav {
+ background-color: rgba(183, 204, 235, 0);
+ padding: 0px !important;
+ 
+}
+
+.dropdown-toggle::after {
+ display: none;
+}
+
+
+
+.loginicn{
+ width: fit-content;
+ padding-left: 0px !important;
+ position: relative;
+ right: 50px;
+ white-space: nowrap;
+ overflow: hidden;
+}
+.fa-angle-down{
+ margin-left: 5px;
+ 
+}
+
+
+
+.img-logo {
+ height: 55px;
+ width: auto;
+}
+.navItem {
+ text-decoration: none !important;
+}
+
+
+#navlink,
+#basic-nav-dropdown {
+ padding: 5px 12px;
+ color: rgba(0,0,0,.55);
+ font-size: 1.125rem;
+ white-space: nowrap;
+ overflow: hidden;
+}
+#navlink:hover,
+#basic-nav-dropdown:hover {
+ color: #0d6efd !important;
+}
+
+.dropdown-menu {
+ padding: 0rem !important;
+ margin: 0 !important;
+ font-size: 15px !important;
+}
+
+.dropdownItem {
+ color: rgb(53, 53, 53);
+ text-decoration: none;
+}
+.dropdown-item{
+ padding:0px !important;
+}
+.highlightItem{
+ padding: 0.25rem 1rem;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+ display: block;
+}
+.logo {
+ font-weight: bold;
+ font-family: Comic Sans MS;
+}
+.login{
+ position: relative;
+ left:10px;
+ display:inline-block;
+}
+.dropdown-toggle::after {
+ display: none !important;
+}
+@media only screen and (max-width: 1000px) {
+ #navlink,
+ #basic-nav-dropdown {
+   padding: 5px;
+   color: black;
+   font-size: 18px;
+   margin-left: 5px;
+   margin-right: 5px;
+   text-decoration: none !important;
+ }
+ .login{
+   
+   left:-10px;
+ }
+ .loginicn{
+   
+   right: 0px;
+ }
+ 
+}
