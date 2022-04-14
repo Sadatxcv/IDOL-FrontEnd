@@ -9,8 +9,8 @@ const Header = () => {
       <Navbar collapseOnSelect className="nav" expand="lg">
         <Container>
           <Navbar.Brand href="/home">
-            <Link to="/home">
-              <img className="img-logo" src="/static/logo.png" alt="logo"></img>
+            <Link to="/">
+              <img className="img-logo" src="static\logo-1.png" alt="logo"></img>
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
