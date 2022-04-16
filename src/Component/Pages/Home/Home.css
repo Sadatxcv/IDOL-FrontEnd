@@ -1,21 +1,15 @@
-/* .parallax {
+.parallax {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   height: 42vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url(../../../../public/static/banner1.jpg);
-  background-size: contain;
-  background-position-y: 15%;
-  background-attachment: fixed;
-  color: #fff;
-} */
-.parallex{
-  height: 42vh;
-  max-height: 42vh;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(https://lh5.googleusercontent.com/xMVA4FJUlkSS5HGKuoftHUwK5kbOMcODPUIoOThyKYbEWvHzB752avEdQjoVIFDVWsk8iEK4t7mvXSLb5FCG4KE=w16383);
+  transform: translate3d(0px, 0px, 0px);
 }
+
 
 .home-container {
   background-color: #fff;
@@ -41,11 +35,4 @@
     background-repeat:no-repeat;
     background-position-y: 2% !important;
   }
-}
-@media only screen and (max-width: 768px) {
-  .parallax{
-    height:25vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url(../../../../public/static/banner1.png);
-    background-position-y: -18%;
-  }} */
+} */
