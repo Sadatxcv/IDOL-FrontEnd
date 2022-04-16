@@ -6,7 +6,7 @@
   height: 42vh;
   background-size: cover;
   background-position: center center;
-  background-image: url(https://lh5.googleusercontent.com/xMVA4FJUlkSS5HGKuoftHUwK5kbOMcODPUIoOThyKYbEWvHzB752avEdQjoVIFDVWsk8iEK4t7mvXSLb5FCG4KE=w16383);
+  background-image: url(/public/static/banner1.jpg);
   transform: translate3d(0px, 0px, 0px);
 }
 
@@ -23,9 +23,108 @@
 .home-container h2{
   font-size: 24px;
   font-weight: bold;
+  transition: 0.3s ease;
 }
+.home-container h2:hover{
+  transform: scale(1.05);
+}
+  
 .home-container li{
   font-size: 19px;
+}
+.home-bottomimg{
+  height: auto;
+  max-width: 100%;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 50px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s ease;
+}
+.home-bottomimg:hover{
+  transform: scale(1.1);
+}
+.home-button{
+  
+}
+button.get-started {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  max-width: 50%;
+}
+
+button.get-started {
+  width: 12rem;
+  height: auto;
+  
+}
+button.get-started .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+button.get-started .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+button.get-started .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.get-started .circle .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+button.get-started .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+button:hover .circle {
+  width: 100%;
+}
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+button:hover .button-text {
+  color: #fff;
 }
 /* @media only screen and (max-width: 480px) {
   .parallax{
