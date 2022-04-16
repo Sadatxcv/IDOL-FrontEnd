@@ -1,16 +1,10 @@
 import React from "react";
 import "./Home.css";
 import { Container } from "react-bootstrap";
-import { Parallax } from 'react-parallax';
-
 const Home = () => {
   React.useEffect(() => {});
   return (
     <div>
-      <Parallax className="cat" bgImage="static/banner1.png" strength={400} bgImageStyle={{top:"-150px"}}
-      >
-      <div className="parallex" />
-    </Parallax>
       <Container className="home-container">
         <br />
         <p className="home-para mt-3">
