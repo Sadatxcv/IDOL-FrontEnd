@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.css";
 import { Container } from "react-bootstrap";
-
 const Home = () => {
   React.useEffect(() => {
     window.onscroll = function () {

@@ -5,6 +5,7 @@ import Sticky from "react-stickynode";
 import LoginAndSignup from "./Component/Pages/LoginAndSignup/LoginAndSignup";
 import Navbar from "./Component/Navbar/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import LangForm from "./Component/Forms/LangForm";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/LoginAndSignup" element={<LoginAndSignup />} />
+          <Route exact path="/langform" element={<LangForm />} />
         </Routes>
       </BrowserRouter>
     </div>
