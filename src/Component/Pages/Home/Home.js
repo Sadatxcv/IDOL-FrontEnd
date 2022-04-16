@@ -29,7 +29,7 @@ const Home = () => {
       <div className="parallax" id="target"></div>
       <Container className="home-container">
         <br />
-        
+        git add 
         <p className="home-para mt-3">
           This interactive workshop is for people who are curious and want to
           learn as opposed to memorizing the subjects that they are studying.
