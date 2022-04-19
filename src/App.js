@@ -5,7 +5,8 @@ import Sticky from "react-stickynode";
 import LoginAndSignup from "./Component/Pages/LoginAndSignup/LoginAndSignup";
 import Navbar from "./Component/Navbar/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import LangForm from "./Component/Forms/LangForm";
+import Question_form from "./Component/Form/Question_form";
+import QuestionPaper from "./Component/Form/QuestionPaper";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/LoginAndSignup" element={<LoginAndSignup />} />
-          <Route exact path="/langform" element={<LangForm />} />
+          <Route exact path="/paper" element={<QuestionPaper />} />
+          <Route exact path="/question" element={<Question_form />} />
         </Routes>
       </BrowserRouter>
     </div>
