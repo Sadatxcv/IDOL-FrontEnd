@@ -8,6 +8,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MindMapDiscussion from "./Component/Pages/MindMap/MindMapDiscussion";
 import Question_form from "./Component/Form/Question_form";
 import Testquestion from "./Component/Test/Testquestion";
+import ThemanticAnalysis from "./Component/Pages/ThemanticAnalysis/ThemanticAnalysis";
+import Discussion from "./Component/Pages/Discussion/Discussion";
+import About from "./Component/Pages/About/About";
+import Contact from "./Component/Pages/Contact/Contact";
 
 function App() {
   return (
@@ -27,6 +31,20 @@ function App() {
           />
           <Route exact path="/Question" element={<Question_form />} />
           <Route exact path="/test" element={<Testquestion />} />
+          <Route
+            exact
+            path="/mindMapDiscussion"
+            element={<MindMapDiscussion />}
+          />
+          <Route
+            exact
+            path="/themanticAnalysis"
+            element={<ThemanticAnalysis />}
+          />
+          <Route exact path="/discussion" element={<Discussion />} />
+          <Route exact path="/About" element={<About />} />
+          <Route exact path="/Contact" element={<Contact />} />
+          Contact
         </Routes>
       </BrowserRouter>
     </div>

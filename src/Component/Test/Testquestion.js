@@ -133,11 +133,7 @@ function Question_form() {
   }
 
   function commitToDB() {
-    console.log(questions);
-    // dispatch({
-    //   type: actionTypes.SET_QUESTIONS,
-    //   questions: questions,
-    // });
+    console.log(questions, documentName, documentDescription);
 
     axios.post(`http://localhost:9000/add_questions/${id}`, {
       document_name: documentName,
@@ -821,7 +817,7 @@ function Question_form() {
               <Button
                 variant="contained"
                 color="primary"
-                type="submit"
+                onClick={commitToDB}
                 style={{ fontSize: "14px" }}
               >
                 Save
