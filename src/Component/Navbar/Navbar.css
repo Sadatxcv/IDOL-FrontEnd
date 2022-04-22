@@ -10,8 +10,6 @@
  display: none;
 }
 
-
-
 .loginicn{
  width: fit-content;
  padding-left: 0px !important;
@@ -28,8 +26,6 @@
 .navbar-brand {
   padding:0px;
 }
-
-
 
 .img-logo {
  height: 80px;
@@ -57,7 +53,8 @@
 }
 #navlink:hover,
 #basic-nav-dropdown:hover {
-  color: #fbaa19 !important;
+  color: #fbaa19 !important; 
+  font-weight: bold;
 }
 
 .dropdown-menu {
@@ -92,6 +89,7 @@
 .dropdown-toggle::after {
  display: none !important;
 }
+
 @media only screen and (max-width: 1000px) {
  #navlink,
  #basic-nav-dropdown {
@@ -110,5 +108,4 @@
    
    right: 0px;
  }
- 
 }

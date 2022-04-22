@@ -10,12 +10,12 @@
   transform: translate3d(0px, 0px, 0px);
 }
 
-
 .home-container {
   background-color: #fff;
   text-align: justify;
   justify-content: center;
 }
+
 .home-para{
   font-size: 24px;
 }
@@ -31,14 +31,16 @@
 }
   
 .home-container li{
-  font-size: 19px;
+  font-size: 20px;
 }
+
 .home-bottomimg{
   height: auto;
   max-width: 80%;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 50px 0 rgba(0, 0, 0, 0.19);
   transition: 0.3s ease;
 }
+
 .home-bottom{
   display: flex;
   justify-content: center;

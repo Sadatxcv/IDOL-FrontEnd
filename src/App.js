@@ -28,8 +28,8 @@ function App() {
           <Route exact path="/mindMapDiscussion" element={<MindMapDiscussion/>}/>
           <Route exact path="/themanticAnalysis" element={<ThemanticAnalysis/>}/>
           <Route exact path="/discussion" element={<Discussion/>}/>
-          <Route exact path="/About" element={<About/>}/>
-          <Route exact path="/Contact" element={<Contact/>}/>
+          <Route exact path="/about" element={<About/>}/>
+          <Route exact path="/contact" element={<Contact/>}/>
           Contact
         </Routes>
       </BrowserRouter>
