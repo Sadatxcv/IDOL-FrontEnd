@@ -1,0 +1,116 @@
+.MindMapDiscussion-Video-Container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.MindMapDiscussion-Video-Container iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+}
+.MindMapDiscussion-Container h1 {
+  text-align: center;
+  color: #741f8a;
+  font-size: 36px;
+}
+.MindMapDiscussion-Container h2 {
+  color: #741f8a;
+  font-size: 25.3px;
+  padding-top: 50px;
+}
+.MindMapDiscussion-Container img {
+  height: auto;
+  width: 80%;
+}
+
+button.get-started-MindMapDiscussion {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    max-width: 50%;
+  }
+  
+  button.get-started-MindMapDiscussion {
+    width: 12rem;
+    height: auto;
+    
+  }
+  button.get-started-MindMapDiscussion .circle-MindMapDiscussion {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #741f8a;
+    border-radius: 1.625rem;
+  }
+  button.get-started-MindMapDiscussion .circle-MindMapDiscussion .icon-MindMapDiscussion {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+  }
+  button.get-started-MindMapDiscussion .circle-MindMapDiscussion .icon-MindMapDiscussion.arrow-MindMapDiscussion {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+  .home-button-MindMapDiscussion{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  button.get-started-MindMapDiscussion .circle-MindMapDiscussion .icon-MindMapDiscussion.arrow-MindMapDiscussion::before {
+    position: absolute;
+    content: '';
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+  }
+
+  button.get-started-MindMapDiscussion .button-text-MindMapDiscussion {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #741f8a;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  button:hover .circle-MindMapDiscussion {
+    width: 100%;
+  }
+  button:hover .circle-MindMapDiscussion .icon-MindMapDiscussion.arrow-MindMapDiscussion {
+    background: #fff;
+    transform: translate(1rem, 0);
+  }
+  button:hover .button-text-MindMapDiscussion {
+    color: #fff;
+  }

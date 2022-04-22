@@ -5,8 +5,9 @@ import Sticky from "react-stickynode";
 import LoginAndSignup from "./Component/Pages/LoginAndSignup/LoginAndSignup";
 import Navbar from "./Component/Navbar/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MindMapDiscussion from "./Component/Pages/MindMap/MindMapDiscussion";
 import Question_form from "./Component/Form/Question_form";
-import QuestionPaper from "./Component/Form/QuestionPaper";
+import Testquestion from "./Component/Test/Testquestion";
 
 function App() {
   return (
@@ -19,8 +20,13 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/LoginAndSignup" element={<LoginAndSignup />} />
-          <Route exact path="/paper" element={<QuestionPaper />} />
-          <Route exact path="/question" element={<Question_form />} />
+          <Route
+            exact
+            path="/MindMapDiscussion"
+            element={<MindMapDiscussion />}
+          />
+          <Route exact path="/Question" element={<Question_form />} />
+          <Route exact path="/test" element={<Testquestion />} />
         </Routes>
       </BrowserRouter>
     </div>

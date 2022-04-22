@@ -28,7 +28,6 @@ const Home = () => {
       <div className="parallax" id="target"></div>
       <Container className="home-container">
         <br />
-        git add 
         <p className="home-para mt-3">
           This interactive workshop is for people who are curious and want to
           learn as opposed to memorizing the subjects that they are studying.
@@ -63,11 +62,11 @@ const Home = () => {
         <br />
         <h2>To get certified complete the following steps in this website:</h2>
         <br />
-        <img className="home-bottomimg" src="static/image.jpg" alt="" />
+        <div className="home-bottom" ><img className="home-bottomimg" src="static/image.jpg" alt="" /></div>
         <br />
         <br />
         <br />
-        <div className="home-button ">
+        <div className="home-button">
           <button class="get-started ">
             <span class="circle" >
               <span class="icon arrow"></span>

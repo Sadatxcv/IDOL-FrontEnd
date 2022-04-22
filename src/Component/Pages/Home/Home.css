@@ -34,16 +34,19 @@
 }
 .home-bottomimg{
   height: auto;
-  max-width: 100%;
+  max-width: 80%;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 50px 0 rgba(0, 0, 0, 0.19);
   transition: 0.3s ease;
 }
+.home-bottom{
+  display: flex;
+  justify-content: center;
+}
+
 .home-bottomimg:hover{
   transform: scale(1.1);
 }
-.home-button{
-  
-}
+
 button.get-started {
   position: relative;
   display: inline-block;
@@ -71,7 +74,7 @@ button.get-started .circle {
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: #282936;
+  background: #741f8a;
   border-radius: 1.625rem;
 }
 button.get-started .circle .icon {
@@ -88,6 +91,11 @@ button.get-started .circle .icon.arrow {
   width: 1.125rem;
   height: 0.125rem;
   background: none;
+}
+.home-button{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
 button.get-started .circle .icon.arrow::before {
@@ -110,7 +118,7 @@ button.get-started .button-text {
   bottom: 0;
   padding: 0.75rem 0;
   margin: 0 0 0 1.85rem;
-  color: #282936;
+  color: #741f8a;
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
