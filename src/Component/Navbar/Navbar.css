@@ -48,14 +48,16 @@
 #navlink,
 #basic-nav-dropdown {
  padding: 5px 12px;
- color: rgba(0,0,0,.55);
+ /* color: rgba(0,0,0,.55); */
+ color: #0b504f !important;
+ font-weight: 450;
  font-size: 1.125rem;
  white-space: nowrap;
  overflow: hidden;
 }
 #navlink:hover,
 #basic-nav-dropdown:hover {
- color: #0d6efd !important;
+  color: #fbaa19 !important;
 }
 
 .dropdown-menu {

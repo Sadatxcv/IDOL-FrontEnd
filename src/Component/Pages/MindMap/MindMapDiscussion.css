@@ -16,7 +16,7 @@
   color: #741f8a;
   font-size: 36px;
 }
-.MindMapDiscussion-Container h2 {
+.MindMapDiscussion-Container h3 {
   color: #741f8a;
   font-size: 25.3px;
   padding-top: 50px;
@@ -53,7 +53,7 @@ button.get-started-MindMapDiscussion {
     margin: 0;
     width: 3rem;
     height: 3rem;
-    background: #741f8a;
+    background: #fbaa19;
     border-radius: 1.625rem;
   }
   button.get-started-MindMapDiscussion .circle-MindMapDiscussion .icon-MindMapDiscussion {
@@ -62,7 +62,7 @@ button.get-started-MindMapDiscussion {
     top: 0;
     bottom: 0;
     margin: auto;
-    background: #fff;
+    background: #0b504f ;
   }
   button.get-started-MindMapDiscussion .circle-MindMapDiscussion .icon-MindMapDiscussion.arrow-MindMapDiscussion {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -84,8 +84,8 @@ button.get-started-MindMapDiscussion {
     right: 0.0625rem;
     width: 0.625rem;
     height: 0.625rem;
-    border-top: 0.125rem solid #fff;
-    border-right: 0.125rem solid #fff;
+    border-top: 0.125rem solid #0b504f ;
+    border-right: 0.125rem solid #0b504f ;
     transform: rotate(45deg);
   }
 
@@ -97,8 +97,8 @@ button.get-started-MindMapDiscussion {
     right: 0;
     bottom: 0;
     padding: 0.75rem 0;
-    margin: 0 0 0 1.85rem;
-    color: #741f8a;
+    margin: 0 0 0 1rem;
+    color: #0b504f ;
     font-weight: 700;
     line-height: 1.6;
     text-align: center;
@@ -108,9 +108,9 @@ button.get-started-MindMapDiscussion {
     width: 100%;
   }
   button:hover .circle-MindMapDiscussion .icon-MindMapDiscussion.arrow-MindMapDiscussion {
-    background: #fff;
+    background: #0b504f ;
     transform: translate(1rem, 0);
   }
   button:hover .button-text-MindMapDiscussion {
-    color: #fff;
+    color: #0b504f ;
   }
