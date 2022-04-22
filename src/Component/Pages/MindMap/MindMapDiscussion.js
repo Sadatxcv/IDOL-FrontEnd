@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container,Button } from "react-bootstrap";
 import "./MindMapDiscussion.css";
 
 const MindMapDiscussion = () => {
