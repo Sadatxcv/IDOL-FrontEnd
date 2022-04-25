@@ -24,36 +24,13 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/LoginAndSignup" element={<LoginAndSignup />} />
-<<<<<<< HEAD
-          <Route exact path="/langform" element={<LangForm />} />
-          <Route exact path="/mindMapDiscussion" element={<MindMapDiscussion/>}/>
-          <Route exact path="/themanticAnalysis" element={<ThemanticAnalysis/>}/>
-          <Route exact path="/discussion" element={<Discussion/>}/>
-          <Route exact path="/about" element={<About/>}/>
-          <Route exact path="/contact" element={<Contact/>}/>
-=======
-          <Route
-            exact
-            path="/MindMapDiscussion"
-            element={<MindMapDiscussion />}
-          />
+          <Route exact path="/MindMapDiscussion" element={<MindMapDiscussion />} />
           <Route exact path="/Question" element={<Question_form />} />
           <Route exact path="/test" element={<Testquestion />} />
-          <Route
-            exact
-            path="/mindMapDiscussion"
-            element={<MindMapDiscussion />}
-          />
-          <Route
-            exact
-            path="/themanticAnalysis"
-            element={<ThemanticAnalysis />}
-          />
+          <Route exact path="/themanticAnalysis" element={<ThemanticAnalysis />} />
           <Route exact path="/discussion" element={<Discussion />} />
-          <Route exact path="/About" element={<About />} />
-          <Route exact path="/Contact" element={<Contact />} />
->>>>>>> 67aa40e8f2c4415664c259ae3ec46a00949e67a7
-          Contact
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </div>

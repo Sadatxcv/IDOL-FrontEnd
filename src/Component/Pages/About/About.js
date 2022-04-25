@@ -27,7 +27,6 @@ const About = () => {
                     IDOL has been set up to form academic partnerships with stakeholders involved in the delivery of partial and/or full online education. The stakeholders include educational institutions, teachers, students, employers and regulatory bodies.
                   </p>
                 </Card.Text>
-                
               </Col>
             </Row>
           </Card.Body>
