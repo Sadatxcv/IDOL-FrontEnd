@@ -7,6 +7,7 @@ import Navbar from "./Component/Navbar/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LangForm from "./Component/Forms/LangForm";
 import MindMapDiscussion from "./Component/Pages/MindMap/MindMapDiscussion";
+import CreateMindMap from "./Component/Pages/MindMap/CreateMindMap";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/LoginAndSignup" element={<LoginAndSignup />} />
           <Route exact path="/langform" element={<LangForm />} />
           <Route exact path="/MindMapDiscussion" element={<MindMapDiscussion/>}/>
+          <Route exact path="/CreateMindMap" element={<CreateMindMap/>}/>
         </Routes>
       </BrowserRouter>
     </div>
