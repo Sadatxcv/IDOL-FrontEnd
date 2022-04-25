@@ -12,7 +12,7 @@ import ThemanticAnalysis from "./Component/Pages/ThemanticAnalysis/ThemanticAnal
 import Discussion from "./Component/Pages/Discussion/Discussion";
 import About from "./Component/Pages/About/About";
 import Contact from "./Component/Pages/Contact/Contact";
-import User_form from "./Component/Test/user_form";
+import User_form from "./Component/Test/User_form";
 
 function App() {
   return (
@@ -59,7 +59,6 @@ function App() {
           <Route exact path="/discussion" element={<Discussion />} />
           <Route exact path="/About" element={<About />} />
           <Route exact path="/Contact" element={<Contact />} />
-          Contact
         </Routes>
       </BrowserRouter>
     </div>

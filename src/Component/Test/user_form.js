@@ -1,12 +1,7 @@
 import { Button, Typography } from "@material-ui/core";
 import React, { useState, useEffect } from "react";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Radio from "@material-ui/core/Radio";
-
-import { useNavigate } from "react-router-dom";
-
-import "./user_form.css";
-
+import { useNavigate, useParams } from "react-router-dom";
+import "./User_form.css";
 import axios from "axios";
 function User_form() {
   var quest = [];
@@ -14,7 +9,16 @@ function User_form() {
   var navigate = useNavigate();
 
   var [answer, setAnswer] = useState([]);
-  var [{ questions, doc_name, doc_desc }] = useNavigate();
+  const [questions, setEventDetails] = useState([]);
+  let { id } = useParams();
+  function getEvents() {
+    axios
+      .get("http://localhost:8000/forms/api/questions/")
+      .then((response) => response.data)
+      .then((data) => {
+        setEventDetails(data);
+      });
+  }
 
   function select(que, option) {
     // answer.map((ele)=>{
@@ -27,8 +31,8 @@ function User_form() {
     setAnswer(answer);
     console.log(answer);
   }
-
   useEffect(() => {
+    getEvents();
     questions.map((q) => {
       answer.push({
         question: q.questionText,
@@ -40,7 +44,6 @@ function User_form() {
     });
     console.log(answer);
   }, []);
-
   var post_answer_data = {};
 
   function selectinput(que, option) {
@@ -76,7 +79,7 @@ function User_form() {
       post_answer_data[ele.question] = ele.answer;
     });
 
-    axios.post(`http://localhost:9000/student_response/${doc_name}`, {
+    axios.post(`http://localhost:8000/forms/api/questions/`, {
       column: quest,
       answer_data: [post_answer_data],
     });
@@ -84,52 +87,72 @@ function User_form() {
     navigate.push(`/submitted`);
   }
   return (
-    <div className="submit">
-      <div className="user_form">
-        <div className="user_form_section">
-          <div className="user_title_section">
-            <Typography style={{ fontSize: "26px" }}>{doc_name}</Typography>
-            <Typography style={{ fontSize: "15px" }}>{doc_desc}</Typography>
-          </div>
+    <>
+      <div className="submit">
+        <div className="user_form">
+          <div className="user_form_section">
+            <div className="user_title_section">
+              <Typography style={{ fontSize: "26px" }}>Untitle</Typography>
+              <Typography style={{ fontSize: "15px" }}>Des</Typography>
+            </div>
 
-          {questions.map((question, qindex) => (
-            <div className="user_form_questions">
-              <Typography
-                style={{
-                  fontSize: "15px",
-                  fontWeight: "400",
-                  letterSpacing: ".1px",
-                  lineHeight: "24px",
-                  paddingBottom: "8px",
-                  fontSize: "14px",
-                }}
-              >
-                {qindex + 1}. {question.questionText}
-              </Typography>
-              {question.options.map((ques, index) => (
-                <div key={index} style={{ marginBottom: "5px" }}>
-                  <div style={{ display: "flex" }}>
-                    <div className="form-check">
-                      {question.questionType != "radio" ? (
-                        question.questionType != "text" ? (
-                          <label>
-                            <input
-                              type={question.questionType}
-                              name={qindex}
-                              value={ques.optionText}
-                              className="form-check-input"
-                              required={question.required}
-                              style={{ margnLeft: "5px", marginRight: "5px" }}
-                              onChange={(e) => {
-                                selectcheck(
-                                  e.target.checked,
-                                  question.questionText,
-                                  ques.optionText
-                                );
-                              }}
-                            />{" "}
-                            {ques.optionText}
-                          </label>
+            {questions.map((question, qindex) => (
+              <div className="user_form_questions">
+                <Typography
+                  style={{
+                    fontSize: "15px",
+                    fontWeight: "400",
+                    letterSpacing: ".1px",
+                    lineHeight: "24px",
+                    paddingBottom: "8px",
+                    fontSize: "14px",
+                  }}
+                >
+                  {qindex + 1}. {question.questionText}
+                </Typography>
+                {question.options.map((ques, index) => (
+                  <div key={index} style={{ marginBottom: "5px" }}>
+                    <div style={{ display: "flex" }}>
+                      <div className="form-check">
+                        {question.questionType != "radio" ? (
+                          question.questionType != "text" ? (
+                            <label>
+                              <input
+                                type={question.questionType}
+                                name={qindex}
+                                value={ques.optionText}
+                                className="form-check-input"
+                                required={question.required}
+                                style={{ margnLeft: "5px", marginRight: "5px" }}
+                                onChange={(e) => {
+                                  selectcheck(
+                                    e.target.checked,
+                                    question.questionText,
+                                    ques.optionText
+                                  );
+                                }}
+                              />{" "}
+                              {ques.optionText}
+                            </label>
+                          ) : (
+                            <label>
+                              <input
+                                type={question.questionType}
+                                name={qindex}
+                                value={ques.optionText}
+                                className="form-check-input"
+                                required={question.required}
+                                style={{ margnLeft: "5px", marginRight: "5px" }}
+                                onChange={(e) => {
+                                  selectinput(
+                                    question.questionText,
+                                    e.target.value
+                                  );
+                                }}
+                              />{" "}
+                              {ques.optionText}
+                            </label>
+                          )
                         ) : (
                           <label>
                             <input
@@ -139,54 +162,34 @@ function User_form() {
                               className="form-check-input"
                               required={question.required}
                               style={{ margnLeft: "5px", marginRight: "5px" }}
-                              onChange={(e) => {
-                                selectinput(
-                                  question.questionText,
-                                  e.target.value
-                                );
+                              onChange={() => {
+                                select(question.questionText, ques.optionText);
                               }}
-                            />{" "}
+                            />
                             {ques.optionText}
                           </label>
-                        )
-                      ) : (
-                        <label>
-                          <input
-                            type={question.questionType}
-                            name={qindex}
-                            value={ques.optionText}
-                            className="form-check-input"
-                            required={question.required}
-                            style={{ margnLeft: "5px", marginRight: "5px" }}
-                            onChange={() => {
-                              select(question.questionText, ques.optionText);
-                            }}
-                          />
-                          {ques.optionText}
-                        </label>
-                      )}
+                        )}
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
+            ))}
+
+            <div className="user_form_submit">
+              <Button
+                variant="contained"
+                color="primary"
+                onClick={submit}
+                style={{ fontSize: "14px" }}
+              >
+                Submit
+              </Button>
             </div>
-          ))}
-
-          <div className="user_form_submit">
-            <Button
-              variant="contained"
-              color="primary"
-              onClick={submit}
-              style={{ fontSize: "14px" }}
-            >
-              Submit
-            </Button>
           </div>
-
-          <div className="user_footer">Google Forms</div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
