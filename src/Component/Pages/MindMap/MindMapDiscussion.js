@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container,Button } from "react-bootstrap";
 import "./MindMapDiscussion.css";
 
 const MindMapDiscussion = () => {
@@ -11,7 +11,7 @@ const MindMapDiscussion = () => {
           way to help your brain focus on a topic?
         </h1>
 
-        <h2>Watch the video below to learn about Question-MindMap(QMM).</h2>
+        <h3>Watch the video below to learn about Question-MindMap(QMM).</h3>
         <div className="MindMapDiscussion-Video-Container">
           <iframe
             width="560"
@@ -24,7 +24,7 @@ const MindMapDiscussion = () => {
             allowfullscreen
           ></iframe>
         </div>
-        <h2>Study the sample application of the Question Mindmap</h2>
+        <h3>Study the sample application of the Question Mindmap</h3>
         <center><img src="static/MindMapImage.jpg" alt="" /></center>
 
         <div className="home-button-MindMapDiscussion">

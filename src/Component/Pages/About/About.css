@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/* body {
+	font-family: 'Roboto', sans-serif;
+} */
+
+.About-Container h1 {
+    font-size: 2.5rem;
+    color: #0b504f ;
+}
+
+.About-Container h6 {
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.About-Container h6:hover {
+    transform: scale(1.05);
+    color:#fbaa19 ;
+}
+
+.Purpose-Card , .Philosophy-Vision-Card, .Goals-Card, .Contact-Card {
+    box-shadow: 5px 5px 12px 0px rgba(0,0,0,0.4);
+-webkit-box-shadow: 5px 5px 12px 0px rgba(0,0,0,0.4);
+-moz-box-shadow: 5px 5px 12px 0px rgba(0,0,0,0.4);
+}
+
+.Purpose-Card h4 {
+    margin-top: 60px;
+    color: #0b504f ;
+}
+
+.Purpose-Image {
+    height: auto;
+    max-width: 80%;
+    transition: 0.4s ease;
+}
+
+.Purpose-Image:hover {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 50px 0 rgba(0, 0, 0, 0.19);
+    -moz-transform: scale(1.1) translate(25px, 0px);
+    -webkit-transform: scale(1.1) translate(25px, 0px);
+    -o-transform: scale(1.1) translate(25px, 0px);
+    -ms-transform: scale(1.1) translate(25px, 0px);
+    transform: scale(1.1) translate(25px, 0px);
+}
+
+.Philosophy-Vision-Card h4 {
+    color: #0b504f ;
+}
+
+.Goals-Image {
+    margin-top: 55px;
+    margin-left: 15px;
+    height: 80%;
+    max-width: 90%;
+    transition: 0.4s ease;
+}
+.Goals-Image:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 50px 0 rgba(0, 0, 0, 0.19);
+    -moz-transform: scale(1.1) translate(4px, 0px);
+    -webkit-transform: scale(1.1) translate(4px, 0px);
+    -o-transform: scale(1.1) translate(4px, 0px);
+    -ms-transform: scale(1.1) translate(4px, 0px);
+    transform: scale(1.1) translate(4px, 0px);
+}
+
+.Color:hover {
+    background-color: #c9e4ca  ;
+}
+
+.Goals-Card h4 {
+    color: #0b504f ;
+}
+
+.Contact-Card h2 {
+    color: #0b504f ;
+}
+
+.Footer-Card {
+    font-size: 1.2rem;
+    background-color: #0b504f;
+    color: #fbaa19  ;
+}
+
+.Contact-Button {
+    text-transform: uppercase;
+    background-color: #0b504f;
+    color: #fff ;
+    border: none;
+}
+.Contact-Button:hover {
+    background-color: #fbaa19 ;
+    color: #0b504f ;
+}
+  

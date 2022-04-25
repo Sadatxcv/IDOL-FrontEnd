@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Container } from "react-bootstrap";
+
 const Home = () => {
   React.useEffect(() => {
     window.onscroll = function () {
@@ -62,10 +63,10 @@ const Home = () => {
         <br />
         <h2>To get certified complete the following steps in this website:</h2>
         <br />
+        <br/>
         <div className="home-bottom" ><img className="home-bottomimg" src="static/image.jpg" alt="" /></div>
         <br />
-        <br />
-        <br />
+
         <div className="home-button">
           <button class="get-started ">
             <span class="circle" >
