@@ -12,6 +12,7 @@ import ThemanticAnalysis from "./Component/Pages/ThemanticAnalysis/ThemanticAnal
 import Discussion from "./Component/Pages/Discussion/Discussion";
 import About from "./Component/Pages/About/About";
 import Contact from "./Component/Pages/Contact/Contact";
+import User_form from "./Component/Test/user_form";
 
 function App() {
   return (
@@ -24,14 +25,19 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/LoginAndSignup" element={<LoginAndSignup />} />
-<<<<<<< HEAD
-          <Route exact path="/langform" element={<LangForm />} />
-          <Route exact path="/mindMapDiscussion" element={<MindMapDiscussion/>}/>
-          <Route exact path="/themanticAnalysis" element={<ThemanticAnalysis/>}/>
-          <Route exact path="/discussion" element={<Discussion/>}/>
-          <Route exact path="/about" element={<About/>}/>
-          <Route exact path="/contact" element={<Contact/>}/>
-=======
+          <Route
+            exact
+            path="/mindMapDiscussion"
+            element={<MindMapDiscussion />}
+          />
+          <Route
+            exact
+            path="/themanticAnalysis"
+            element={<ThemanticAnalysis />}
+          />
+          <Route exact path="/discussion" element={<Discussion />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/contact" element={<Contact />} />
           <Route
             exact
             path="/MindMapDiscussion"
@@ -39,6 +45,7 @@ function App() {
           />
           <Route exact path="/Question" element={<Question_form />} />
           <Route exact path="/test" element={<Testquestion />} />
+          <Route exact path="/userform" element={<User_form />} />
           <Route
             exact
             path="/mindMapDiscussion"
@@ -52,7 +59,6 @@ function App() {
           <Route exact path="/discussion" element={<Discussion />} />
           <Route exact path="/About" element={<About />} />
           <Route exact path="/Contact" element={<Contact />} />
->>>>>>> 67aa40e8f2c4415664c259ae3ec46a00949e67a7
           Contact
         </Routes>
       </BrowserRouter>
