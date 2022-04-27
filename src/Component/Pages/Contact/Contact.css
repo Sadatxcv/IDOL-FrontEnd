@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.Message-Card{
+    margin-bottom: 20px;
+    padding: 15px 30px 15px 30px;
+
+    box-shadow: 5px 5px 12px 0px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 5px 5px 12px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 12px 0px rgba(0,0,0,0.4);
+}
+.Message-Card h2 {
+    text-transform: uppercase;
+    color: #0b504f;
+}
+
+.text-title {
+    font-size: small;
+    text-transform: uppercase;
+}
+
+Form Label{
+    font-size: small;
+    text-transform: uppercase;
+}
+
+.text-muted p{
+    font-size: medium;
+    color: #5f997e  ;
+    margin-top: 20px;
+}
+
+.mb-3 {
+    margin-top: 25px;
+}
+
+.submit-button {
+    background-color: #0b504f;
+    text-transform: uppercase;
+    color:#fff;
+    border: none;
+}
+
+.submit-button:hover {
+    background-color: #fbaa19 ;
+    color:#0b504f;
+}
+
+
+/* .box{
+    height: auto;
+    max-width: 80%;
+    transition: 0.4s ease;
+}
+.box:hover {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 50px 0 rgba(0, 0, 0, 0.19);
+    -moz-transform: scale(1.1) translate(25px, 0px);
+    -webkit-transform: scale(1.1) translate(25px, 0px);
+    -o-transform: scale(1.1) translate(25px, 0px);
+    -ms-transform: scale(1.1) translate(25px, 0px);
+    transform: scale(1.1) translate(25px, 0px);
+} */
