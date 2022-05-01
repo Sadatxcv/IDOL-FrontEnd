@@ -45,7 +45,7 @@ const ChallengeThree = () => {
             <span class="circle-ChallengeThree">
               <span class="icon-ChallengeThree arrow-ChallengeThree"></span>
             </span>
-            <a href="/Discussion">
+            <a href="/discussion-4">
               <span class="button-text-ChallengeThree">Next</span>
             </a>
           </button>

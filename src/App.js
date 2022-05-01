@@ -80,7 +80,7 @@ function App() {
           />
           <Route
             exact
-            path="/mindMapExercise"
+            path="/challenge-4"
             element={<MindMapExercise />}
           />
           <Route

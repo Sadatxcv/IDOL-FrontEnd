@@ -39,7 +39,7 @@ const ThemanticAnalysisTwo = () => {
             <span class="circle-ThemanticAnalysisTwo">
               <span class="icon-ThemanticAnalysisTwo arrow-ThemanticAnalysisTwo"></span>
             </span>
-            <a href="/challengeOne">
+            <a href="/challenge-1">
               <span class="button-text-ThemanticAnalysisTwo">Next</span>
             </a>
           </button>
