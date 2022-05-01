@@ -25,6 +25,8 @@ import DiscussionFour from "./Component/Pages/Discussion/DiscussionFour";
 import CoursePreQuestions2  from "./Component/Pages/Course pre-questionaaire/CoursePreQuestions2";
 import DiscussionFive from "./Component/Pages/Discussion/DiscussionFive";
 import ChallengeFive from "./Component/Pages/Challenges/ChallengeFive";
+import DiscussionSix from "./Component/Pages/Discussion/DiscussionSix";
+import DiscussionSeven from "./Component/Pages/Discussion/DiscussionSeven";
 
 function App() {
   return (
@@ -84,6 +86,16 @@ function App() {
             exact
             path="/discussion-5"
             element={<DiscussionFive />}
+          />
+          <Route
+            exact
+            path="/discussion-6"
+            element={<DiscussionSix />}
+          />
+          <Route
+            exact
+            path="/discussion-7"
+            element={<DiscussionSeven />}
           />
           <Route
             exact

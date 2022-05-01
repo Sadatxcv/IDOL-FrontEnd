@@ -33,6 +33,28 @@ const Header = () => {
                   id="navlink"
                   eventKey="1"
                   as={Link}
+                  to="/about"
+                >
+                  <span>About Us</span>
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link
+                  className="navItem"
+                  id="navlink"
+                  eventKey="1"
+                  as={Link}
+                  to="/contact"
+                >
+                  <span>Contact Us</span>
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link
+                  className="navItem"
+                  id="navlink"
+                  eventKey="1"
+                  as={Link}
                   to="/LoginAndSignup"
                 >
                   Login & Sign Up
