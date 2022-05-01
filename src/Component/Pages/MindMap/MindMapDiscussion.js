@@ -32,7 +32,7 @@ const MindMapDiscussion = () => {
             <span class="circle-MindMapDiscussion" >
               <span class="icon-MindMapDiscussion arrow-MindMapDiscussion"></span>
             </span>
-            <span class="button-text-MindMapDiscussion">Next</span>
+            <a href="discussion-3"><span class="button-text-MindMapDiscussion">Next</span></a>
           </button>
         </div>
       </Container>

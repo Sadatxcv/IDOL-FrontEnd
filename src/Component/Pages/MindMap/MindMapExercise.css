@@ -15,11 +15,12 @@
     text-align: center;
     color: #741f8a;
     font-size: 36px;
+    margin-bottom: 50px;
   }
   .MindMapExercise-Container h3 {
     color: #741f8a;
     font-size: 25.3px;
-    padding-top: 50px;
+    margin-top: 20px;
   }
   .MindMapExercise-Container img {
     height: auto;

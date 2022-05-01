@@ -27,7 +27,6 @@ const DiscussionThree = () => {
           <br />
           <img src="static/Discussion-3_image-2.jpg" alt="discussion_img" />
         </center>
-        <h3>Now click "Next" to answer the following question.</h3>
 
         <br />
 
@@ -36,7 +35,7 @@ const DiscussionThree = () => {
             <span class="circle-DiscussionThree">
               <span class="icon-DiscussionThree arrow-DiscussionThree"></span>
             </span>
-            <a href="/Discussion">
+            <a href="/challenge-3">
               <span class="button-text-DiscussionThree">Next</span>
             </a>
           </button>

@@ -7,7 +7,9 @@ const MindMapExercise = () => {
     <div>
       <Container className="MindMapExercise-Container">
         <h1>
-        Challenge 4: <br /> For your chosen topic use the diagram above to add specific questions in each branch.
+        Challenge 4:
+        <br /> 
+        For your chosen topic use the diagram above to add specific questions in each branch.
         </h1>
         <h3>"For your chosen topic use the diagram above to add specific questions in each branch."</h3>
         
@@ -23,7 +25,7 @@ const MindMapExercise = () => {
             allowfullscreen
           ></iframe>
         </div>
-        <h3>Draw your own Mind Map Below</h3>
+        <h3 className="text-center">Draw your own Mind Map Below</h3>
         <center>
           <div className="MindMapExercise-Inputs">
               
