@@ -24,6 +24,7 @@ import ChallengeThree from "./Component/Pages/Challenges/ChallengeThree";
 import DiscussionFour from "./Component/Pages/Discussion/DiscussionFour";
 import CoursePreQuestions2  from "./Component/Pages/Course pre-questionaaire/CoursePreQuestions2";
 import DiscussionFive from "./Component/Pages/Discussion/DiscussionFive";
+import ChallengeFive from "./Component/Pages/Challenges/ChallengeFive";
 
 function App() {
   return (
@@ -98,6 +99,11 @@ function App() {
             exact
             path="/challenge-3"
             element={<ChallengeThree />}
+          />
+          <Route
+            exact
+            path="/challenge-5"
+            element={<ChallengeFive />}
           />
           <Route exact path="/Question" element={<Question_form />} />
           <Route exact path="/test" element={<Testquestion />} />
