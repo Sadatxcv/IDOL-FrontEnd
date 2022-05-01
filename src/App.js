@@ -23,6 +23,7 @@ import DiscussionThree from "./Component/Pages/Discussion/DiscussionThree";
 import ChallengeThree from "./Component/Pages/Challenges/ChallengeThree";
 import DiscussionFour from "./Component/Pages/Discussion/DiscussionFour";
 import CoursePreQuestions2  from "./Component/Pages/Course pre-questionaaire/CoursePreQuestions2";
+import DiscussionFive from "./Component/Pages/Discussion/DiscussionFive";
 
 function App() {
   return (
@@ -80,7 +81,12 @@ function App() {
           />
           <Route
             exact
-            path="/mindMapExercise"
+            path="/discussion-5"
+            element={<DiscussionFive />}
+          />
+          <Route
+            exact
+            path="/challenge-4"
             element={<MindMapExercise />}
           />
           <Route
