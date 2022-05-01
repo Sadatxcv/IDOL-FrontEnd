@@ -14,15 +14,11 @@ const ChallengeSeven = () => {
         </h1>
         <h3>
           Create a Mindmap regarding the topic ________  and mail it to _______ to recieve a certificate at your registered Email address.
-          <br />
-          <br />
-          Thank you & Goodluck!
         </h3>
         <br />
-
         <br />
-        
 
+        <h3 className="text-center">Thank you & Goodluck!</h3>
         <br />
 
         <div className="home-button-ChallengeSeven">
