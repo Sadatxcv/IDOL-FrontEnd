@@ -30,7 +30,7 @@ const ThemanticAnalysisTwo = () => {
           />
         </center>
 
-        <h3>Now click "Next" to answer the following question.</h3>
+        <h3 className="text-center">Now click "Next" to answer the following question.</h3>
 
         <br />
 
@@ -39,7 +39,7 @@ const ThemanticAnalysisTwo = () => {
             <span class="circle-ThemanticAnalysisTwo">
               <span class="icon-ThemanticAnalysisTwo arrow-ThemanticAnalysisTwo"></span>
             </span>
-            <a href="/Discussion">
+            <a href="/challengeOne">
               <span class="button-text-ThemanticAnalysisTwo">Next</span>
             </a>
           </button>

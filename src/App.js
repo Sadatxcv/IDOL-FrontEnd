@@ -22,6 +22,7 @@ import CoursePreQuestions  from "./Component/Pages/Course pre-questionaaire/Cour
 import DiscussionThree from "./Component/Pages/Discussion/DiscussionThree";
 import ChallengeThree from "./Component/Pages/Challenges/ChallengeThree";
 import DiscussionFour from "./Component/Pages/Discussion/DiscussionFour";
+import CoursePreQuestions2  from "./Component/Pages/Course pre-questionaaire/CoursePreQuestions2";
 
 function App() {
   return (
@@ -35,8 +36,13 @@ function App() {
           <Route exact path="/LoginAndSignup" element={<LoginAndSignup />} />
           <Route
             exact
-            path="/coursePreQuestionnaire"
+            path="/coursePreQuestionnaire-1"
             element={<CoursePreQuestions />}
+          />
+          <Route
+            exact
+            path="/coursePreQuestionnaire-2"
+            element={<CoursePreQuestions2 />}
           />
           <Route
             exact

@@ -54,7 +54,7 @@ const ThemanticAnalysisOne = () => {
             <span class="circle-ThemanticAnalysisOne">
               <span class="icon-ThemanticAnalysisOne arrow-ThemanticAnalysisOne"></span>
             </span>
-            <a href="/Discussion">
+            <a href="/coursePreQuestionnaire-2">
               <span class="button-text-ThemanticAnalysisOne">Next</span>
             </a>
           </button>

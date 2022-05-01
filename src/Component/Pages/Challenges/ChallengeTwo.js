@@ -32,16 +32,10 @@ const ChallengeTwo = () => {
           ></iframe>
         </div>
         <br />
-        <h3>
-          Go through the options given below and select the ones that you feel
-          to be correct
-        </h3>
-        <br />
+        
         <center>
           <img src="static/Challenge-2_Image-1.jpg" alt="challange_img" />
         </center>
-
-        <h3>Now click "Next" to answer the following question.</h3>
 
         <br />
 
@@ -50,7 +44,7 @@ const ChallengeTwo = () => {
             <span class="circle-ChallengeTwo">
               <span class="icon-ChallengeTwo arrow-ChallengeTwo"></span>
             </span>
-            <a href="/Discussion">
+            <a href="/discussion-2">
               <span class="button-text-ChallengeTwo">Next</span>
             </a>
           </button>
