@@ -15,6 +15,7 @@ import About from "./Component/Pages/About/About";
 import Contact from "./Component/Pages/Contact/Contact";
 import User_form from "./Component/Test/user_form";
 import MindMapExercise from "./Component/Pages/MindMap/MindMapExercise";
+import ChallengeOne from "./Component/Pages/Challenges/ChallengeOne";
 
 
 function App() {
@@ -44,6 +45,11 @@ function App() {
             exact
             path="/mindmapdiscussion"
             element={<MindMapDiscussion />}
+          />
+          <Route
+            exact
+            path="/ChallengeOne"
+            element={<ChallengeOne />}
           />
           <Route
             exact
