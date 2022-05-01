@@ -16,6 +16,7 @@ import Contact from "./Component/Pages/Contact/Contact";
 import User_form from "./Component/Test/user_form";
 import MindMapExercise from "./Component/Pages/MindMap/MindMapExercise";
 import ChallengeOne from "./Component/Pages/Challenges/ChallengeOne";
+import CoursePreQuestions from "./Component/Pages/Course pre-questionaaire/CoursePreQuestions";
 
 
 function App() {
@@ -28,6 +29,11 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/LoginAndSignup" element={<LoginAndSignup />} />
+          <Route
+            exact
+            path="/coursePreQuestionnaire"
+            element={<CoursePreQuestions />}
+          />
           <Route
             exact
             path="/themanticAnalysis-1"
@@ -48,7 +54,7 @@ function App() {
           />
           <Route
             exact
-            path="/ChallengeOne"
+            path="/challengeOne"
             element={<ChallengeOne />}
           />
           <Route
