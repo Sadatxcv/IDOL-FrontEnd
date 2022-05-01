@@ -1,5 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import "./DiscussionFive.css";
 
 const DiscussionFive = () => {
@@ -22,11 +24,11 @@ const DiscussionFive = () => {
           ></iframe>
         </div>
         <br />
-        <center>
-          <img src="static/Discussion-5_image-1.jpg" alt="discussion_img" />
-          <img src="static/Discussion-5_image-2.jpg" alt="discussion_img" />
-        </center>
-        <h3>Now click "Next" to answer the following question.</h3>
+        <Row>
+          <Col sm={6}><img src="static/Discussion-5_image-1.jpg" alt="discussion_img" /></Col>
+          <Col sm={6}><img src="static/Discussion-5_image-2.jpg" alt="discussion_img" /></Col>
+        </Row>
+        <h3 className="text-center">Now click "Next" to answer the following question.</h3>
 
         <br />
 

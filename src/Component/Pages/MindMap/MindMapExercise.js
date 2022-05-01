@@ -37,7 +37,7 @@ const MindMapExercise = () => {
             <span class="circle-MindMapExercise">
               <span class="icon-MindMapExercise arrow-MindMapExercise"></span>
             </span>
-            <span class="button-text-MindMapExercise">Next</span>
+            <a href="discussion-5"><span class="button-text-MindMapExercise">Next</span></a>
           </button>
         </div>
       </Container>
