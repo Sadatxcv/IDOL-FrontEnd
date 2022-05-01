@@ -1,7 +1,7 @@
 import { Button, Typography } from "@material-ui/core";
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import "./User_form.css";
+import "./user_form.css";
 import axios from "axios";
 function User_form() {
   var quest = [];
