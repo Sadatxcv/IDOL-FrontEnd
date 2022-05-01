@@ -10,14 +10,15 @@ import Question_form from "./Component/Form/Question_form";
 import Testquestion from "./Component/Test/Testquestion";
 import ThemanticAnalysisOne from "./Component/Pages/ThemanticAnalysis/ThemanticAnalysisOne";
 import ThemanticAnalysisTwo from "./Component/Pages/ThemanticAnalysis/ThemanticAnalysisTwo";
-import Discussion from "./Component/Pages/Discussion/Discussion";
+import DiscussionTwo from "./Component/Pages/Discussion/DiscussionTwo";
 import About from "./Component/Pages/About/About";
 import Contact from "./Component/Pages/Contact/Contact";
 import User_form from "./Component/Test/user_form";
 import MindMapExercise from "./Component/Pages/MindMap/MindMapExercise";
 import ChallengeOne from "./Component/Pages/Challenges/ChallengeOne";
-import CoursePreQuestions from "./Component/Pages/Course pre-questionaaire/CoursePreQuestions";
-
+import DiscussionOne from "./Component/Pages/Discussion/DiscussionOne";
+import ChallengeTwo from "./Component/Pages/Challenges/ChallengeTwo";
+import CoursePreQuestions  from "./Component/Pages/Course pre-questionaaire/CoursePreQuestions";
 
 function App() {
   return (
@@ -44,7 +45,7 @@ function App() {
             path="/themanticAnalysis-2"
             element={<ThemanticAnalysisTwo />}
           />
-          <Route exact path="/discussion" element={<Discussion />} />
+          <Route exact path="/discussionTwo" element={<DiscussionTwo />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route
@@ -59,8 +60,18 @@ function App() {
           />
           <Route
             exact
+            path="/discussionOne"
+            element={<DiscussionOne />}
+          />
+          <Route
+            exact
             path="/mindMapExercise"
             element={<MindMapExercise />}
+          />
+          <Route
+            exact
+            path="/challengeTwo"
+            element={<ChallengeTwo />}
           />
           <Route exact path="/Question" element={<Question_form />} />
           <Route exact path="/test" element={<Testquestion />} />
