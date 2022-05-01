@@ -19,6 +19,9 @@ import ChallengeOne from "./Component/Pages/Challenges/ChallengeOne";
 import DiscussionOne from "./Component/Pages/Discussion/DiscussionOne";
 import ChallengeTwo from "./Component/Pages/Challenges/ChallengeTwo";
 import CoursePreQuestions  from "./Component/Pages/Course pre-questionaaire/CoursePreQuestions";
+import DiscussionThree from "./Component/Pages/Discussion/DiscussionThree";
+import ChallengeThree from "./Component/Pages/Challenges/ChallengeThree";
+import DiscussionFour from "./Component/Pages/Discussion/DiscussionFour";
 
 function App() {
   return (
@@ -45,7 +48,8 @@ function App() {
             path="/themanticAnalysis-2"
             element={<ThemanticAnalysisTwo />}
           />
-          <Route exact path="/discussionTwo" element={<DiscussionTwo />} />
+          <Route exact path="/discussion-2" element={<DiscussionTwo />} />
+          <Route exact path="/discussion-3" element={<DiscussionThree />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route
@@ -55,13 +59,18 @@ function App() {
           />
           <Route
             exact
-            path="/challengeOne"
+            path="/challenge-1"
             element={<ChallengeOne />}
           />
           <Route
             exact
-            path="/discussionOne"
+            path="/discussion-1"
             element={<DiscussionOne />}
+          />
+          <Route
+            exact
+            path="/discussion-4"
+            element={<DiscussionFour />}
           />
           <Route
             exact
@@ -70,8 +79,13 @@ function App() {
           />
           <Route
             exact
-            path="/challengeTwo"
+            path="/challenge-2"
             element={<ChallengeTwo />}
+          />
+          <Route
+            exact
+            path="/challenge-3"
+            element={<ChallengeThree />}
           />
           <Route exact path="/Question" element={<Question_form />} />
           <Route exact path="/test" element={<Testquestion />} />
