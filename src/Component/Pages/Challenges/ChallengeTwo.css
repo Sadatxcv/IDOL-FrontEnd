@@ -1,9 +1,9 @@
-.Discussion-Video-Container {
+.ChallengeTwo-Video-Container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
   }
-  .Discussion-Video-Container iframe {
+  .ChallengeTwo-Video-Container iframe {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -11,22 +11,22 @@
     height: 80%;
     transform: translate(-50%, -50%);
   }
-  .Discussion-Container h1 {
+  .ChallengeTwo-Container h1 {
     text-align: center;
     color: #741f8a;
     font-size: 36px;
   }
-  .Discussion-Container h3 {
+  .ChallengeTwo-Container h3 {
     color: #741f8a;
     font-size: 25.3px;
     padding-top: 50px;
   }
-  .Discussion-Container img {
+  .ChallengeTwo-Container img {
     height: auto;
     width: 80%;
   }
   
-  button.get-started-Discussion {
+  button.get-started-ChallengeTwo {
       position: relative;
       display: inline-block;
       cursor: pointer;
@@ -41,12 +41,12 @@
       max-width: 50%;
     }
     
-    button.get-started-Discussion {
+    button.get-started-ChallengeTwo {
       width: 12rem;
       height: auto;
       
     }
-    button.get-started-Discussion .circle-Discussion {
+    button.get-started-ChallengeTwo .circle-ChallengeTwo {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       position: relative;
       display: block;
@@ -56,7 +56,7 @@
       background: #FBAA19;
       border-radius: 1.625rem;
     }
-    button.get-started-Discussion .circle-Discussion .icon-Discussion {
+    button.get-started-ChallengeTwo .circle-ChallengeTwo .icon-ChallengeTwo {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       position: absolute;
       top: 0;
@@ -64,20 +64,20 @@
       margin: auto;
       background: #0b504f;
     }
-    button.get-started-Discussion .circle-Discussion .icon-Discussion.arrow-Discussion {
+    button.get-started-ChallengeTwo .circle-ChallengeTwo .icon-ChallengeTwo.arrow-ChallengeTwo {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       left: 0.625rem;
       width: 1.125rem;
       height: 0.125rem;
       background: none;
     }
-    .home-button-Discussion{
+    .home-button-ChallengeTwo{
       display: flex;
       justify-content: center;
       padding: 20px;
     }
     
-    button.get-started-Discussion .circle-Discussion .icon-Discussion.arrow-Discussion::before {
+    button.get-started-ChallengeTwo .circle-ChallengeTwo .icon-ChallengeTwo.arrow-ChallengeTwo::before {
       position: absolute;
       content: '';
       top: -0.25rem;
@@ -88,13 +88,8 @@
       border-right: 0.125rem solid #0b504f;
       transform: rotate(45deg);
     }
-
-    /* button:hover .circle-Discussion .icon-Discussion.arrow-Discussion::before {
-      border-top: 0.125rem solid #0b504f;
-      border-right: 0.125rem solid #0b504f;
-    } */
   
-    button.get-started-Discussion .button-text-Discussion {
+    button.get-started-ChallengeTwo .button-text-ChallengeTwo {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       position: absolute;
       top: 0;
@@ -103,19 +98,30 @@
       bottom: 0;
       padding: 0.75rem 0;
       margin: 0 0 0 1rem;
-      color: #0b504f ;
+      color: #0b504f;
       font-weight: 700;
       line-height: 1.6;
       text-align: center;
       text-transform: uppercase;
     }
-    button:hover .circle-Discussion {
+    button:hover .circle-ChallengeTwo {
       width: 100%;
     }
-    button:hover .circle-Discussion .icon-Discussion.arrow-Discussion {
+    button:hover .circle-ChallengeTwo .icon-ChallengeTwo.arrow-ChallengeTwo {
       background: #0b504f;
       transform: translate(1rem, 0);
     }
-    button:hover .button-text-Discussion {
+    button:hover .button-text-ChallengeTwo {
       color: #0b504f;
     }
+
+    
+/*
+<------ Color Pallet ----> 
+Deep Sea Green - #0b504f 
+yellow - #fbaa19 
+light green - #87bba2 
+pale green - #c9e4ca 
+peach - #ff9d70
+
+*/
