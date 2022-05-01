@@ -130,7 +130,7 @@ function App() {
             path="/challenge-7"
             element={<ChallengeSeven />}
           />
-          <Route exact path="/survey" element={<Survey />} />
+          <Route exact path="/finalAssessment" element={<Survey />} />
           <Route exact path="/Question" element={<Question_form />} />
           <Route exact path="/test" element={<Testquestion />} />
           <Route exact path="/userform" element={<User_form />} />
