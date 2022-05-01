@@ -1,11 +1,11 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import "./ChallengeSeven.css";
+import "./Challenge.css";
 
 const ChallengeSeven = () => {
   return (
     <div>
-      <Container className="ChallengeSeven-Container">
+      <Container className="Challenge-Container">
         <h1>
           Challenge 7:
           <br />
@@ -21,13 +21,13 @@ const ChallengeSeven = () => {
         <h3 className="text-center">Thank you & Goodluck!</h3>
         <br />
 
-        <div className="home-button-ChallengeSeven">
-          <button class="get-started-ChallengeSeven">
-            <span class="circle-ChallengeSeven">
-              <span class="icon-ChallengeSeven arrow-ChallengeSeven"></span>
+        <div className="home-button-Challenge">
+          <button class="get-started-Challenge">
+            <span class="circle-Challenge">
+              <span class="icon-Challenge arrow-Challenge"></span>
             </span>
             <a href="/">
-              <span class="button-text-ChallengeSeven">Exit</span>
+              <span class="button-text-Challenge">Exit</span>
             </a>
           </button>
         </div>

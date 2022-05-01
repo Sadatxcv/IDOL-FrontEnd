@@ -1,9 +1,9 @@
-.ChallengeOne-Video-Container {
+.Discussion-Video-Container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
   }
-  .ChallengeOne-Video-Container iframe {
+  .Discussion-Video-Container iframe {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -11,22 +11,22 @@
     height: 80%;
     transform: translate(-50%, -50%);
   }
-  .ChallengeOne-Container h1 {
+  .Discussion-Container h1 {
     text-align: center;
     color: #741f8a;
     font-size: 36px;
   }
-  .ChallengeOne-Container h3 {
+  .Discussion-Container h3 {
     color: #741f8a;
     font-size: 25.3px;
     padding-top: 50px;
   }
-  .ChallengeOne-Container img {
+  .Discussion-Container img {
     height: auto;
     width: 80%;
   }
   
-  button.get-started-ChallengeOne {
+  button.get-started-Discussion {
       position: relative;
       display: inline-block;
       cursor: pointer;
@@ -41,12 +41,12 @@
       max-width: 50%;
     }
     
-    button.get-started-ChallengeOne {
+    button.get-started-Discussion {
       width: 12rem;
       height: auto;
       
     }
-    button.get-started-ChallengeOne .circle-ChallengeOne {
+    button.get-started-Discussion .circle-Discussion {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       position: relative;
       display: block;
@@ -56,7 +56,7 @@
       background: #FBAA19;
       border-radius: 1.625rem;
     }
-    button.get-started-ChallengeOne .circle-ChallengeOne .icon-ChallengeOne {
+    button.get-started-Discussion .circle-Discussion .icon-Discussion {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       position: absolute;
       top: 0;
@@ -64,20 +64,20 @@
       margin: auto;
       background: #0b504f;
     }
-    button.get-started-ChallengeOne .circle-ChallengeOne .icon-ChallengeOne.arrow-ChallengeOne {
+    button.get-started-Discussion .circle-Discussion .icon-Discussion.arrow-Discussion {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       left: 0.625rem;
       width: 1.125rem;
       height: 0.125rem;
       background: none;
     }
-    .home-button-ChallengeOne{
+    .home-button-Discussion{
       display: flex;
       justify-content: center;
       padding: 20px;
     }
     
-    button.get-started-ChallengeOne .circle-ChallengeOne .icon-ChallengeOne.arrow-ChallengeOne::before {
+    button.get-started-Discussion .circle-Discussion .icon-Discussion.arrow-Discussion::before {
       position: absolute;
       content: '';
       top: -0.25rem;
@@ -89,7 +89,7 @@
       transform: rotate(45deg);
     }
   
-    button.get-started-ChallengeOne .button-text-ChallengeOne {
+    button.get-started-Discussion .button-text-Discussion {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       position: absolute;
       top: 0;
@@ -104,14 +104,14 @@
       text-align: center;
       text-transform: uppercase;
     }
-    button:hover .circle-ChallengeOne {
+    button:hover .circle-Discussion {
       width: 100%;
     }
-    button:hover .circle-ChallengeOne .icon-ChallengeOne.arrow-ChallengeOne {
+    button:hover .circle-Discussion .icon-Discussion.arrow-Discussion {
       background: #0b504f;
       transform: translate(1rem, 0);
     }
-    button:hover .button-text-ChallengeOne {
+    button:hover .button-text-Discussion {
       color: #0b504f;
     }
 

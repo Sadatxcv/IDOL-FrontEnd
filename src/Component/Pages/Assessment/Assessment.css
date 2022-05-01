@@ -1,9 +1,9 @@
-.MindMapExercise-Video-Container {
+.Assessment-Video-Container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
   }
-  .MindMapExercise-Video-Container iframe {
+  .Assessment-Video-Container iframe {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -11,23 +11,23 @@
     height: 80%;
     transform: translate(-50%, -50%);
   }
-  .MindMapExercise-Container h1 {
+  .Assessment-Container h1 {
     text-align: center;
     color: #741f8a;
     font-size: 36px;
     margin-bottom: 50px;
   }
-  .MindMapExercise-Container h3 {
+  .Assessment-Container h3 {
     color: #741f8a;
     font-size: 25.3px;
     margin-top: 20px;
   }
-  .MindMapExercise-Container img {
+  .Assessment-Container img {
     height: auto;
     width: 80%;
   }
   
-  button.get-started-MindMapExercise {
+  button.get-started-Assessment {
       position: relative;
       display: inline-block;
       cursor: pointer;
@@ -42,12 +42,12 @@
       max-width: 50%;
     }
     
-    button.get-started-MindMapExercise {
+    button.get-started-Assessment {
       width: 12rem;
       height: auto;
       
     }
-    button.get-started-MindMapExercise .circle-MindMapExercise {
+    button.get-started-Assessment .circle-Assessment {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       position: relative;
       display: block;
@@ -57,7 +57,7 @@
       background: #fbaa19;
       border-radius: 1.625rem;
     }
-    button.get-started-MindMapExercise .circle-MindMapExercise .icon-MindMapExercise {
+    button.get-started-Assessment .circle-Assessment .icon-Assessment {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       position: absolute;
       top: 0;
@@ -65,20 +65,20 @@
       margin: auto;
       background: #0b504f ;
     }
-    button.get-started-MindMapExercise .circle-MindMapExercise .icon-MindMapExercise.arrow-MindMapExercise {
+    button.get-started-Assessment .circle-Assessment .icon-Assessment.arrow-Assessment {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       left: 0.625rem;
       width: 1.125rem;
       height: 0.125rem;
       background: none;
     }
-    .home-button-MindMapExercise{
+    .home-button-Assessment{
       display: flex;
       justify-content: center;
       padding: 20px;
     }
     
-    button.get-started-MindMapExercise .circle-MindMapExercise .icon-MindMapExercise.arrow-MindMapExercise::before {
+    button.get-started-Assessment .circle-Assessment .icon-Assessment.arrow-Assessment::before {
       position: absolute;
       content: '';
       top: -0.25rem;
@@ -91,7 +91,7 @@
     }
     
     
-    button.get-started-MindMapExercise .button-text-MindMapExercise {
+    button.get-started-Assessment .button-text-Assessment {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       position: absolute;
       top: 0;
@@ -106,13 +106,13 @@
       text-align: center;
       text-transform: uppercase;
     }
-    button:hover .circle-MindMapExercise {
+    button:hover .circle-Assessment {
       width: 100%;
     }
-    button:hover .circle-MindMapExercise .icon-MindMapExercise.arrow-MindMapExercise {
+    button:hover .circle-Assessment .icon-Assessment.arrow-Assessment {
       background: #0b504f ;
       transform: translate(1rem, 0);
     }
-    button:hover .button-text-MindMapExercise {
+    button:hover .button-text-Assessment {
       color: #0b504f ;
     }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container,Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import "./MindMapDiscussion.css";
 
 const MindMapDiscussion = () => {
@@ -32,7 +32,7 @@ const MindMapDiscussion = () => {
             <span class="circle-MindMapDiscussion" >
               <span class="icon-MindMapDiscussion arrow-MindMapDiscussion"></span>
             </span>
-            <a href="discussion-3"><span class="button-text-MindMapDiscussion">Next</span></a>
+            <a href="/conclusion"><span class="button-text-MindMapDiscussion">Next</span></a>
           </button>
         </div>
       </Container>

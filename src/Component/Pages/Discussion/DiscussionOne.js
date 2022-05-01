@@ -1,17 +1,17 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import "./DiscussionOne.css";
+import "./Discussion.css";
 
 const DiscussionOne = () => {
   return (
     <div>
-      <Container className="DiscussionOne-Container">
+      <Container className="Discussion-Container">
         <h1>
           As a child were you curious? Did you ask questions? In your opinion,
           why did you ask questions?
         </h1>
 
-        <div className="DiscussionOne-Video-Container">
+        <div className="Discussion-Video-Container">
           <iframe
             width="560"
             height="315"
@@ -28,13 +28,13 @@ const DiscussionOne = () => {
 
         <br />
 
-        <div className="home-button-DiscussionOne">
-          <button class="get-started-DiscussionOne">
-            <span class="circle-DiscussionOne">
-              <span class="icon-DiscussionOne arrow-DiscussionOne"></span>
+        <div className="home-button-Discussion">
+          <button class="get-started-Discussion">
+            <span class="circle-Discussion">
+              <span class="icon-Discussion arrow-Discussion"></span>
             </span>
             <a href="/challenge-2">
-              <span class="button-text-DiscussionOne">Next</span>
+              <span class="button-text-Discussion">Next</span>
             </a>
           </button>
         </div>

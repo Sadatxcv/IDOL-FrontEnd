@@ -1,11 +1,11 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import "./ChallengeOne.css";
+import "./Challenge.css";
 
 const ChallengeOne = () => {
   return (
     <div>
-      <Container className="ChallengeOne-Container">
+      <Container className="Challenge-Container">
         <h1>
           Challenge 1:
           <br />
@@ -17,7 +17,7 @@ const ChallengeOne = () => {
           why did you ask questions?" Watch the video and respond to the
           question below.
         </h3>
-        <div className="ChallengeOne-Video-Container">
+        <div className="Challenge-Video-Container">
           <iframe
             width="560"
             height="315"
@@ -42,13 +42,13 @@ const ChallengeOne = () => {
 
         <br />
 
-        <div className="home-button-ChallengeOne">
-          <button class="get-started-ChallengeOne">
-            <span class="circle-ChallengeOne">
-              <span class="icon-ChallengeOne arrow-ChallengeOne"></span>
+        <div className="home-button-Challenge">
+          <button class="get-started-Challenge">
+            <span class="circle-Challenge">
+              <span class="icon-Challenge arrow-Challenge"></span>
             </span>
             <a href="/discussion-1">
-              <span class="button-text-ChallengeOne">Next</span>
+              <span class="button-text-Challenge">Next</span>
             </a>
           </button>
         </div>

@@ -1,11 +1,11 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import "./ChallengeThree.css";
+import "./Challenge.css";
 
 const ChallengeThree = () => {
   return (
     <div>
-      <Container className="ChallengeThree-Container">
+      <Container className="Challenge-Container">
         <h1>
           Challenge 3:
           <br />
@@ -20,7 +20,7 @@ const ChallengeThree = () => {
           <br />
           Watch the video and respond to the question below.
         </h3>
-        <div className="ChallengeThree-Video-Container">
+        <div className="Challenge-Video-Container">
           <iframe
             width="560"
             height="315"
@@ -40,13 +40,13 @@ const ChallengeThree = () => {
 
         <br />
 
-        <div className="home-button-ChallengeThree">
-          <button class="get-started-ChallengeThree">
-            <span class="circle-ChallengeThree">
-              <span class="icon-ChallengeThree arrow-ChallengeThree"></span>
+        <div className="home-button-Challenge">
+          <button class="get-started-Challenge">
+            <span class="circle-Challenge">
+              <span class="icon-Challenge arrow-Challenge"></span>
             </span>
-            <a href="/discussion-4">
-              <span class="button-text-ChallengeThree">Next</span>
+            <a href="/discussion-3">
+              <span class="button-text-Challenge">Next</span>
             </a>
           </button>
         </div>
