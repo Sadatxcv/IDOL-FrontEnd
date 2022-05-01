@@ -33,7 +33,7 @@ const DiscussionSeven = () => {
             <span class="circle-DiscussionSeven">
               <span class="icon-DiscussionSeven arrow-DiscussionSeven"></span>
             </span>
-            <a href="/Discussion">
+            <a href="/survey">
               <span class="button-text-DiscussionSeven">Next</span>
             </a>
           </button>

@@ -25,7 +25,7 @@ const ChallengeSix = () => {
 
         <br />
         <center>
-          <img src="static/Challenge-6_Image-1.jpg" alt="challange_img" />
+          <img src="static/Challenge-6_Image-1.png" alt="challange_img" />
         </center>
 
         <br />
@@ -35,7 +35,7 @@ const ChallengeSix = () => {
             <span class="circle-ChallengeSix">
               <span class="icon-ChallengeSix arrow-ChallengeSix"></span>
             </span>
-            <a href="">
+            <a href="discussion-7">
               <span class="button-text-ChallengeSix">Next</span>
             </a>
           </button>
