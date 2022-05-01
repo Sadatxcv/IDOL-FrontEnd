@@ -7,9 +7,10 @@ const DiscussionTwo = () => {
     <div>
       <Container className="DiscussionTwo-Container">
         <h1>
-          As a child were you curious? Did you ask questions? In your opinion,
-          why did you ask questions?
+        As adults, if you are curious about something what kind of questions can you ask? Can you think about it and give examples?
         </h1>
+        <br/>
+        <h3>Watch the video below and compare your answers with others.</h3>
 
         <div className="DiscussionTwo-Video-Container">
         <iframe
@@ -26,16 +27,13 @@ const DiscussionTwo = () => {
         <center>
           <img src="static/Discussion-2_image-1.jpg" alt="discussion_img" />
         </center>
-        <h3>Now click "Next" to answer the following question.</h3>
-
-        <br />
 
         <div className="home-button-DiscussionTwo">
           <button class="get-started-DiscussionTwo">
             <span class="circle-DiscussionTwo">
               <span class="icon-DiscussionTwo arrow-DiscussionTwo"></span>
             </span>
-            <a href="/Discussion">
+            <a href="/mindmapdiscussion">
               <span class="button-text-DiscussionTwo">Next</span>
             </a>
           </button>

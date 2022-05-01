@@ -72,7 +72,9 @@ const Home = () => {
             <span class="circle" >
               <span class="icon arrow"></span>
             </span>
-            <a href="/coursePreQuestionnaire"><span class="button-text">Get Started</span></a>
+            <a href="/coursePreQuestionnaire-1">
+              <span class="button-text">Get Started</span>
+            </a>
           </button>
         </div>
       </Container>

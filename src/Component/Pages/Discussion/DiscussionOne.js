@@ -24,7 +24,7 @@ const DiscussionOne = () => {
         </div>
         <br />
 
-        <h3>Now click "Next" to answer the following question.</h3>
+        <h3 className="text-center">Now click "Next" to answer the following question.</h3>
 
         <br />
 
@@ -33,7 +33,7 @@ const DiscussionOne = () => {
             <span class="circle-DiscussionOne">
               <span class="icon-DiscussionOne arrow-DiscussionOne"></span>
             </span>
-            <a href="/Discussion">
+            <a href="/challenge-2">
               <span class="button-text-DiscussionOne">Next</span>
             </a>
           </button>

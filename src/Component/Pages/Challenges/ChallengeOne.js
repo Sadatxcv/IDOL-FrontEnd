@@ -38,7 +38,7 @@ const ChallengeOne = () => {
           />
         </center>
 
-        <h3>Now click "Next" to answer the following question.</h3>
+        <h3 className="text-center">Now click "Next" to answer the following question.</h3>
 
         <br />
 
@@ -47,7 +47,7 @@ const ChallengeOne = () => {
             <span class="circle-ChallengeOne">
               <span class="icon-ChallengeOne arrow-ChallengeOne"></span>
             </span>
-            <a href="/Discussion">
+            <a href="/discussion-1">
               <span class="button-text-ChallengeOne">Next</span>
             </a>
           </button>

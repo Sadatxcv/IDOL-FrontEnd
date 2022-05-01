@@ -2,20 +2,18 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import "./CoursePreQuestions.css";
 
-const CoursePreQuestions = () => {
+const CoursePreQuestions2 = () => {
   return (
     <div>
       <Container className="CoursePreQuestions-Container">
-        <h1>Course pre-questionnaire</h1>
+        <h1>Course pre-questionnaire (continue)</h1>
         <h3>
-        This form is for the participants who wish to develop their "thinking skills" to better manage the challenges of study and life. Please fill up this form to get started with the workshop.
+        Please answer the following question.
         </h3>
         <br/>
         <div className="CoursePreQuestions-Form-Container">
           <center>
-            <img src="static/CoursePre-Questionnaire1_Image-1.png" alt="CoursePreQuestions_img" />
-            <img src="static/CoursePre-Questionnaire1_Image-2.png" alt="CoursePreQuestions_img" />
-            <img src="static/CoursePre-Questionnaire1_Image-3.png" alt="CoursePreQuestions_img" />
+            <img src="static/CoursePre-Questionnaire2_Image-1.png" alt="CoursePreQuestions2_img" />
           </center>
         </div>
         <br />
@@ -27,7 +25,7 @@ const CoursePreQuestions = () => {
             <span class="circle-CoursePreQuestions">
               <span class="icon-CoursePreQuestions arrow-CoursePreQuestions"></span>
             </span>
-            <a href="/themanticAnalysis-1">
+            <a href="/themanticAnalysis-2">
               <span class="button-text-CoursePreQuestions">Next</span>
             </a>
           </button>
@@ -37,4 +35,4 @@ const CoursePreQuestions = () => {
   );
 };
 
-export default CoursePreQuestions;
+export default CoursePreQuestions2;
