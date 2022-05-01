@@ -25,6 +25,8 @@ import DiscussionFour from "./Component/Pages/Discussion/DiscussionFour";
 import CoursePreQuestions2  from "./Component/Pages/Course pre-questionaaire/CoursePreQuestions2";
 import DiscussionFive from "./Component/Pages/Discussion/DiscussionFive";
 import ChallengeFive from "./Component/Pages/Challenges/ChallengeFive";
+import ChallengeSix from "./Component/Pages/Challenges/ChallengeSix";
+import Survey from "./Component/Pages/Survey/Survey";
 
 function App() {
   return (
@@ -105,6 +107,12 @@ function App() {
             path="/challenge-5"
             element={<ChallengeFive />}
           />
+          <Route
+            exact
+            path="/challenge-6"
+            element={<ChallengeSix />}
+          />
+          <Route exact path="/survey" element={<Survey />} />
           <Route exact path="/Question" element={<Question_form />} />
           <Route exact path="/test" element={<Testquestion />} />
           <Route exact path="/userform" element={<User_form />} />
