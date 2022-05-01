@@ -29,6 +29,7 @@ import DiscussionSix from "./Component/Pages/Discussion/DiscussionSix";
 import DiscussionSeven from "./Component/Pages/Discussion/DiscussionSeven";
 import ChallengeSix from "./Component/Pages/Challenges/ChallengeSix";
 import Survey from "./Component/Pages/Survey/Survey";
+import ChallengeSeven from "./Component/Pages/Challenges/ChallengeSeven";
 
 function App() {
   return (
@@ -123,6 +124,11 @@ function App() {
             exact
             path="/challenge-6"
             element={<ChallengeSix />}
+          />
+          <Route
+            exact
+            path="/challenge-7"
+            element={<ChallengeSeven />}
           />
           <Route exact path="/survey" element={<Survey />} />
           <Route exact path="/Question" element={<Question_form />} />

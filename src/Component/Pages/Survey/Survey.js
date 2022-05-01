@@ -8,7 +8,7 @@ const Survey = () => {
       <Container className="Survey-Container">
         <h1>Do you have any questions regarding how to focus your mind?</h1>
         <center>
-        <img src="static/survey.jpg" alt="survey_img" />
+        <img src="static/survey.png" alt="survey_img" />
         </center>
 
         <br />
@@ -18,7 +18,7 @@ const Survey = () => {
             <span class="circle-Survey">
               <span class="icon-Survey arrow-Survey"></span>
             </span>
-            <a href="#">
+            <a href="/challenge-7">
               <span class="button-text-Survey">Next</span>
             </a>
           </button>

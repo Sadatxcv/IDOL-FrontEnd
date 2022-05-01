@@ -25,7 +25,7 @@ const ChallengeSix = () => {
 
         <br />
         <center>
-          <img src="static/Challenge-6_Image-1.jpg" alt="challange_img" />
+          <img src="static/Challenge-6_Image-1.png" alt="challange_img" />
         </center>
 
         <br />

@@ -1,0 +1,127 @@
+.ChallengeSeven-Video-Container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  .ChallengeSeven-Video-Container iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+  }
+  .ChallengeSeven-Container h1 {
+    text-align: center;
+    color: #741f8a;
+    font-size: 36px;
+  }
+  .ChallengeSeven-Container h3 {
+    color: #741f8a;
+    font-size: 25.3px;
+    padding-top: 50px;
+  }
+  .ChallengeSeven-Container img {
+    height: auto;
+    width: 80%;
+  }
+  
+  button.get-started-ChallengeSeven {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      outline: none;
+      border: 0;
+      vertical-align: middle;
+      text-decoration: none;
+      background: transparent;
+      padding: 0;
+      font-size: inherit;
+      font-family: inherit;
+      max-width: 50%;
+    }
+    
+    button.get-started-ChallengeSeven {
+      width: 12rem;
+      height: auto;
+      
+    }
+    button.get-started-ChallengeSeven .circle-ChallengeSeven {
+      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 3rem;
+      height: 3rem;
+      background: #FBAA19;
+      border-radius: 1.625rem;
+    }
+    button.get-started-ChallengeSeven .circle-ChallengeSeven .icon-ChallengeSeven {
+      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background: #0b504f;
+    }
+    button.get-started-ChallengeSeven .circle-ChallengeSeven .icon-ChallengeSeven.arrow-ChallengeSeven {
+      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+      left: 0.625rem;
+      width: 1.125rem;
+      height: 0.125rem;
+      background: none;
+    }
+    .home-button-ChallengeSeven{
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+    
+    button.get-started-ChallengeSeven .circle-ChallengeSeven .icon-ChallengeSeven.arrow-ChallengeSeven::before {
+      position: absolute;
+      content: '';
+      top: -0.25rem;
+      right: 0.0625rem;
+      width: 0.625rem;
+      height: 0.625rem;
+      border-top: 0.125rem solid #0b504f;
+      border-right: 0.125rem solid #0b504f;
+      transform: rotate(45deg);
+    }
+  
+    button.get-started-ChallengeSeven .button-text-ChallengeSeven {
+      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.75rem 0;
+      margin: 0 0 0 1rem;
+      color: #0b504f;
+      font-weight: 700;
+      line-height: 1.6;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    button:hover .circle-ChallengeSeven {
+      width: 100%;
+    }
+    button:hover .circle-ChallengeSeven .icon-ChallengeSeven.arrow-ChallengeSeven {
+      background: #0b504f;
+      transform: translate(1rem, 0);
+    }
+    button:hover .button-text-ChallengeSeven {
+      color: #0b504f;
+    }
+
+    
+/*
+<------ Color Pallet ----> 
+Deep Sea Green - #0b504f 
+yellow - #fbaa19 
+light green - #87bba2 
+pale green - #c9e4ca 
+peach - #ff9d70
+
+*/
