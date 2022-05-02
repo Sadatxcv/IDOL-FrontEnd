@@ -1,8 +1,6 @@
 import React from "react";
-import { Container,Button } from "react-bootstrap";
-import "./MindMapDiscussion.css";
 
-const MindMapDiscussion = () => {
+function MindMapDiscussion() {
   return (
     <div>
       <Container className="MindMapDiscussion-Container">
@@ -20,16 +18,18 @@ const MindMapDiscussion = () => {
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer;
-            autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
         </div>
         <h3>Study the sample application of the Question Mindmap</h3>
-        <center><img src="static/MindMapImage.jpg" alt="" /></center>
+        <center>
+          <img src="static/MindMapImage.jpg" alt="" />
+        </center>
 
         <div className="home-button-MindMapDiscussion">
           <button class="get-started-MindMapDiscussion">
-            <span class="circle-MindMapDiscussion" >
+            <span class="circle-MindMapDiscussion">
               <span class="icon-MindMapDiscussion arrow-MindMapDiscussion"></span>
             </span>
             <span class="button-text-MindMapDiscussion">Next</span>
@@ -38,6 +38,6 @@ const MindMapDiscussion = () => {
       </Container>
     </div>
   );
-};
+}
 
 export default MindMapDiscussion;

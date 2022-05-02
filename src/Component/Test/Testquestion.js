@@ -30,7 +30,6 @@ import { useParams } from "react-router";
 import axios from "axios";
 
 function Question_form() {
-  // const [{}, dispatch] = useStateValue();
   const [questions, setQuestions] = useState([]);
   const [documentName, setDocName] = useState("untitled Document");
 
@@ -48,7 +47,7 @@ function Question_form() {
       answerKey: "",
       questionType: "radio",
       options: [{ optionText: "Option 1" }],
-      open: true,
+      open: false,
       required: false,
     };
 
@@ -56,38 +55,36 @@ function Question_form() {
   }, []);
 
   useEffect(() => {
-    // async function data_adding() {
-    //   var request = await axios.get(`http://localhost:9000/data/${id}`);
-    //   console.log("sudeep");
-    //   var question_data = request.data.questions;
-    //   console.log(question_data);
-    //   var doc_name = request.data.document_name;
-    //   var doc_descip = request.data.doc_desc;
-    //   console.log(doc_name + " " + doc_descip);
-    //   setDocName(doc_name);
-    //   setDocDesc(doc_descip);
-    //   setQuestions(question_data);
-    //   // dispatch({
-    //   //   type: actionTypes.SET_DOC_NAME,
-    //   //   doc_name: doc_name,
-    //   // });
-    //   // dispatch({
-    //   //   type: actionTypes.SET_DOC_DESC,
-    //   //   doc_desc: doc_descip,
-    //   // });
-    //   // dispatch({
-    //   //   type: actionTypes.SET_QUESTIONS,
-    //   //   questions: question_data,
-    //   // });
-    // }
-    // data_adding();
+    async function data_adding() {
+      var request = await axios.get(
+        `http://localhost:8000/forms/api/questions`
+      );
+      console.log("sudeep");
+      var question_data = request.data.questions;
+      console.log(question_data);
+      var doc_name = request.data.document_name;
+      var doc_descip = request.data.doc_desc;
+      console.log(doc_name + " " + doc_descip);
+      setDocName(doc_name);
+      setDocDesc(doc_descip);
+      setQuestions(question_data);
+      // dispatch({
+      //   type: actionTypes.SET_DOC_NAME,
+      //   doc_name: doc_name,
+      // });
+      // dispatch({
+      //   type: actionTypes.SET_DOC_DESC,
+      //   doc_desc: doc_descip,
+      // });
+      // dispatch({
+      //   type: actionTypes.SET_QUESTIONS,
+      //   questions: question_data,
+      // });
+    }
+    data_adding();
   }, []);
 
   function changeType(e) {
-    // dispatch({
-    //   type:"CHANGE_TYPE",
-    //   questionType:e.target.id
-    // })
     setType(e.target.id);
   }
 
@@ -103,6 +100,20 @@ function Question_form() {
       description: "first file",
       questions: questions,
     };
+
+    axios
+      .post(
+        "http://localhost:8000/forms/api/questions/forms/",
+        data,
+        questions[0]
+      )
+      .then((response) => {
+        console.log(response.data);
+        alert("Submitted Successfull");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
 
     setQuestions(questions);
   }
@@ -797,6 +808,7 @@ function Question_form() {
                 variant="contained"
                 color="primary"
                 onClick={commitToDB}
+                onSubmit={saveQuestions}
                 style={{ fontSize: "14px" }}
               >
                 Save
