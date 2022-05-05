@@ -54,7 +54,7 @@
 #navlink:hover,
 #basic-nav-dropdown:hover {
   color: #fbaa19 !important; 
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .dropdown-menu {

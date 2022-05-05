@@ -3,20 +3,20 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./User_form.css";
 import axios from "axios";
-function User_form() {
+function User_form(props) {
   var quest = [];
   var post_answer = [];
   var navigate = useNavigate();
-
+  const id = props.id;
   var [answer, setAnswer] = useState([]);
   const [questions, setEventDetails] = useState([]);
-  let { id } = useParams();
+  // let { id } = useParams();
   function getEvents() {
     axios
-      .get("http://localhost:8000/forms/api/questions/")
+      .get("http://127.0.0.1:8000/forms/test/" + id)
       .then((response) => response.data)
       .then((data) => {
-        setEventDetails(data);
+        setEventDetails([data]);
       });
   }
 
@@ -79,7 +79,7 @@ function User_form() {
       post_answer_data[ele.question] = ele.answer;
     });
 
-    axios.post(`http://localhost:8000/forms/api/questions/`, {
+    axios.post(`http://127.0.0.1:8000/forms/test/`, {
       column: quest,
       answer_data: [post_answer_data],
     });
@@ -91,11 +91,6 @@ function User_form() {
       <div className="submit">
         <div className="user_form">
           <div className="user_form_section">
-            <div className="user_title_section">
-              <Typography style={{ fontSize: "26px" }}>Untitle</Typography>
-              <Typography style={{ fontSize: "15px" }}>Des</Typography>
-            </div>
-
             {questions.map((question, qindex) => (
               <div className="user_form_questions">
                 <Typography
@@ -175,17 +170,6 @@ function User_form() {
                 ))}
               </div>
             ))}
-
-            <div className="user_form_submit">
-              <Button
-                variant="contained"
-                color="primary"
-                onClick={submit}
-                style={{ fontSize: "14px" }}
-              >
-                Submit
-              </Button>
-            </div>
           </div>
         </div>
       </div>

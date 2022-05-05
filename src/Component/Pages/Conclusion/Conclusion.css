@@ -1,9 +1,9 @@
-.Discussion-Video-Container {
+.Conclusion-Video-Container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
   }
-  .Discussion-Video-Container iframe {
+  .Conclusion-Video-Container iframe {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -11,22 +11,22 @@
     height: 80%;
     transform: translate(-50%, -50%);
   }
-  .Discussion-Container h1 {
+  .Conclusion-Container h1 {
     text-align: center;
     color: #741f8a;
     font-size: 36px;
   }
-  .Discussion-Container h3 {
+  .Conclusion-Container h3 {
     color: #741f8a;
     font-size: 25.3px;
     padding-top: 50px;
   }
-  .Discussion-Container img {
+  .Conclusion-Container img {
     height: auto;
     width: 80%;
   }
   
-  button.get-started-Discussion {
+  button.get-started-Conclusion {
       position: relative;
       display: inline-block;
       cursor: pointer;
@@ -41,12 +41,12 @@
       max-width: 50%;
     }
     
-    button.get-started-Discussion {
+    button.get-started-Conclusion {
       width: 12rem;
       height: auto;
       
     }
-    button.get-started-Discussion .circle-Discussion {
+    button.get-started-Conclusion .circle-Conclusion {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       position: relative;
       display: block;
@@ -56,7 +56,7 @@
       background: #FBAA19;
       border-radius: 1.625rem;
     }
-    button.get-started-Discussion .circle-Discussion .icon-Discussion {
+    button.get-started-Conclusion .circle-Conclusion .icon-Conclusion {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       position: absolute;
       top: 0;
@@ -64,20 +64,20 @@
       margin: auto;
       background: #0b504f;
     }
-    button.get-started-Discussion .circle-Discussion .icon-Discussion.arrow-Discussion {
+    button.get-started-Conclusion .circle-Conclusion .icon-Conclusion.arrow-Conclusion {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       left: 0.625rem;
       width: 1.125rem;
       height: 0.125rem;
       background: none;
     }
-    .home-button-Discussion{
+    .home-button-Conclusion{
       display: flex;
       justify-content: center;
       padding: 20px;
     }
     
-    button.get-started-Discussion .circle-Discussion .icon-Discussion.arrow-Discussion::before {
+    button.get-started-Conclusion .circle-Conclusion .icon-Conclusion.arrow-Conclusion::before {
       position: absolute;
       content: '';
       top: -0.25rem;
@@ -89,7 +89,7 @@
       transform: rotate(45deg);
     }
   
-    button.get-started-Discussion .button-text-Discussion {
+    button.get-started-Conclusion .button-text-Conclusion {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       position: absolute;
       top: 0;
@@ -104,14 +104,14 @@
       text-align: center;
       text-transform: uppercase;
     }
-    button:hover .circle-Discussion {
+    button:hover .circle-Conclusion {
       width: 100%;
     }
-    button:hover .circle-Discussion .icon-Discussion.arrow-Discussion {
+    button:hover .circle-Conclusion .icon-Conclusion.arrow-Conclusion {
       background: #0b504f;
       transform: translate(1rem, 0);
     }
-    button:hover .button-text-Discussion {
+    button:hover .button-text-Conclusion {
       color: #0b504f;
     }
 

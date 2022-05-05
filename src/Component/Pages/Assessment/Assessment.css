@@ -1,9 +1,9 @@
-.Discussion-Video-Container {
+.Assessment-Video-Container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
   }
-  .Discussion-Video-Container iframe {
+  .Assessment-Video-Container iframe {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -11,22 +11,23 @@
     height: 80%;
     transform: translate(-50%, -50%);
   }
-  .Discussion-Container h1 {
+  .Assessment-Container h1 {
     text-align: center;
     color: #741f8a;
     font-size: 36px;
+    margin-bottom: 50px;
   }
-  .Discussion-Container h3 {
+  .Assessment-Container h3 {
     color: #741f8a;
     font-size: 25.3px;
-    padding-top: 50px;
+    margin-top: 20px;
   }
-  .Discussion-Container img {
+  .Assessment-Container img {
     height: auto;
     width: 80%;
   }
   
-  button.get-started-Discussion {
+  button.get-started-Assessment {
       position: relative;
       display: inline-block;
       cursor: pointer;
@@ -41,55 +42,56 @@
       max-width: 50%;
     }
     
-    button.get-started-Discussion {
+    button.get-started-Assessment {
       width: 12rem;
       height: auto;
       
     }
-    button.get-started-Discussion .circle-Discussion {
+    button.get-started-Assessment .circle-Assessment {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       position: relative;
       display: block;
       margin: 0;
       width: 3rem;
       height: 3rem;
-      background: #FBAA19;
+      background: #fbaa19;
       border-radius: 1.625rem;
     }
-    button.get-started-Discussion .circle-Discussion .icon-Discussion {
+    button.get-started-Assessment .circle-Assessment .icon-Assessment {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       position: absolute;
       top: 0;
       bottom: 0;
       margin: auto;
-      background: #0b504f;
+      background: #0b504f ;
     }
-    button.get-started-Discussion .circle-Discussion .icon-Discussion.arrow-Discussion {
+    button.get-started-Assessment .circle-Assessment .icon-Assessment.arrow-Assessment {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       left: 0.625rem;
       width: 1.125rem;
       height: 0.125rem;
       background: none;
     }
-    .home-button-Discussion{
+    .home-button-Assessment{
       display: flex;
       justify-content: center;
       padding: 20px;
     }
     
-    button.get-started-Discussion .circle-Discussion .icon-Discussion.arrow-Discussion::before {
+    button.get-started-Assessment .circle-Assessment .icon-Assessment.arrow-Assessment::before {
       position: absolute;
       content: '';
       top: -0.25rem;
       right: 0.0625rem;
       width: 0.625rem;
       height: 0.625rem;
-      border-top: 0.125rem solid #0b504f;
-      border-right: 0.125rem solid #0b504f;
+      border-top: 0.125rem solid #0b504f ;
+      border-right: 0.125rem solid #0b504f ;
       transform: rotate(45deg);
     }
-  
-    button.get-started-Discussion .button-text-Discussion {
+    
+    
+    button.get-started-Assessment .button-text-Assessment {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       position: absolute;
       top: 0;
@@ -98,30 +100,19 @@
       bottom: 0;
       padding: 0.75rem 0;
       margin: 0 0 0 1rem;
-      color: #0b504f;
+      color: #0b504f ;
       font-weight: 700;
       line-height: 1.6;
       text-align: center;
       text-transform: uppercase;
     }
-    button:hover .circle-Discussion {
+    button:hover .circle-Assessment {
       width: 100%;
     }
-    button:hover .circle-Discussion .icon-Discussion.arrow-Discussion {
-      background: #0b504f;
+    button:hover .circle-Assessment .icon-Assessment.arrow-Assessment {
+      background: #0b504f ;
       transform: translate(1rem, 0);
     }
-    button:hover .button-text-Discussion {
-      color: #0b504f;
+    button:hover .button-text-Assessment {
+      color: #0b504f ;
     }
-
-    
-/*
-<------ Color Pallet ----> 
-Deep Sea Green - #0b504f 
-yellow - #fbaa19 
-light green - #87bba2 
-pale green - #c9e4ca 
-peach - #ff9d70
-
-*/

@@ -30,10 +30,11 @@ import { useParams } from "react-router";
 import axios from "axios";
 
 function Question_form() {
+  // const [{}, dispatch] = useStateValue();
   const [questions, setQuestions] = useState([]);
-  const [documentName, setDocName] = useState("untitled Document");
+  // const [documentName, setDocName] = useState("untitled Document");
 
-  const [documentDescription, setDocDesc] = useState("Add Description");
+  // const [documentDescription, setDocDesc] = useState("Add Description");
 
   const [questionType, setType] = useState("radio");
   const [questionRequired, setRequired] = useState("true");
@@ -47,7 +48,7 @@ function Question_form() {
       answerKey: "",
       questionType: "radio",
       options: [{ optionText: "Option 1" }],
-      open: false,
+      open: true,
       required: false,
     };
 
@@ -55,36 +56,38 @@ function Question_form() {
   }, []);
 
   useEffect(() => {
-    async function data_adding() {
-      var request = await axios.get(
-        `http://localhost:8000/forms/api/questions`
-      );
-      console.log("sudeep");
-      var question_data = request.data.questions;
-      console.log(question_data);
-      var doc_name = request.data.document_name;
-      var doc_descip = request.data.doc_desc;
-      console.log(doc_name + " " + doc_descip);
-      setDocName(doc_name);
-      setDocDesc(doc_descip);
-      setQuestions(question_data);
-      // dispatch({
-      //   type: actionTypes.SET_DOC_NAME,
-      //   doc_name: doc_name,
-      // });
-      // dispatch({
-      //   type: actionTypes.SET_DOC_DESC,
-      //   doc_desc: doc_descip,
-      // });
-      // dispatch({
-      //   type: actionTypes.SET_QUESTIONS,
-      //   questions: question_data,
-      // });
-    }
-    data_adding();
+    // async function data_adding() {
+    //   var request = await axios.get(`http://localhost:9000/data/${id}`);
+    //   console.log("sudeep");
+    //   var question_data = request.data.questions;
+    //   console.log(question_data);
+    //   var doc_name = request.data.document_name;
+    //   var doc_descip = request.data.doc_desc;
+    //   console.log(doc_name + " " + doc_descip);
+    //   setDocName(doc_name);
+    //   setDocDesc(doc_descip);
+    //   setQuestions(question_data);
+    //   // dispatch({
+    //   //   type: actionTypes.SET_DOC_NAME,
+    //   //   doc_name: doc_name,
+    //   // });
+    //   // dispatch({
+    //   //   type: actionTypes.SET_DOC_DESC,
+    //   //   doc_desc: doc_descip,
+    //   // });
+    //   // dispatch({
+    //   //   type: actionTypes.SET_QUESTIONS,
+    //   //   questions: question_data,
+    //   // });
+    // }
+    // data_adding();
   }, []);
 
   function changeType(e) {
+    // dispatch({
+    //   type:"CHANGE_TYPE",
+    //   questionType:e.target.id
+    // })
     setType(e.target.id);
   }
 
@@ -98,15 +101,12 @@ function Question_form() {
       formId: "1256",
       name: "My-new_file",
       description: "first file",
+      formm_For: "Them1",
       questions: questions,
     };
-
+    console.log(data);
     axios
-      .post(
-        "http://localhost:8000/forms/api/questions/forms/",
-        data,
-        questions[0]
-      )
+      .post("http://127.0.0.1:8000/forms/test/", questions[0])
       .then((response) => {
         console.log(response.data);
         alert("Submitted Successfull");
@@ -122,7 +122,7 @@ function Question_form() {
     console.log(questions);
 
     axios
-      .post("http://localhost:8000/forms/api/questions/", questions[0])
+      .post("http://127.0.0.1:8000/forms/test/", questions[0])
       .then((response) => {
         console.log(response.data);
         alert("Submitted Successfull");
@@ -767,30 +767,6 @@ function Question_form() {
         <div className="question_form">
           <br></br>
           <div className="section">
-            <div className="question_title_section">
-              <div className="question_form_top">
-                <input
-                  type="text"
-                  className="question_form_top_name"
-                  style={{ color: "black" }}
-                  placeholder={documentName}
-                  value={documentName}
-                  onChange={(e) => {
-                    setDocName(e.target.value);
-                  }}
-                ></input>
-                <input
-                  type="text"
-                  className="question_form_top_desc"
-                  placeholder={documentDescription}
-                  value={documentDescription}
-                  onChange={(e) => {
-                    setDocDesc(e.target.value);
-                  }}
-                ></input>
-              </div>
-            </div>
-
             <DragDropContext onDragEnd={onDragEnd}>
               <Droppable droppableId="droppable">
                 {(provided, snapshot) => (
@@ -808,7 +784,6 @@ function Question_form() {
                 variant="contained"
                 color="primary"
                 onClick={commitToDB}
-                onSubmit={saveQuestions}
                 style={{ fontSize: "14px" }}
               >
                 Save

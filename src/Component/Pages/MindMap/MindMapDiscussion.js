@@ -1,4 +1,6 @@
 import React from "react";
+import { Container } from "react-bootstrap";
+import "./MindMapDiscussion.css";
 
 function MindMapDiscussion() {
   return (
@@ -32,7 +34,9 @@ function MindMapDiscussion() {
             <span class="circle-MindMapDiscussion">
               <span class="icon-MindMapDiscussion arrow-MindMapDiscussion"></span>
             </span>
-            <span class="button-text-MindMapDiscussion">Next</span>
+            <a href="/conclusion">
+              <span class="button-text-MindMapDiscussion">Next</span>
+            </a>
           </button>
         </div>
       </Container>

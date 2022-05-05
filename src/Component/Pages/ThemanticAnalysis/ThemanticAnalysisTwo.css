@@ -1,9 +1,9 @@
-.ThemanticAnalysis-Video-Container {
+.ThemanticAnalysisTwo-Video-Container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
   }
-  .ThemanticAnalysis-Video-Container iframe {
+  .ThemanticAnalysisTwo-Video-Container iframe {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -11,22 +11,22 @@
     height: 80%;
     transform: translate(-50%, -50%);
   }
-  .ThemanticAnalysis-Container h1 {
+  .ThemanticAnalysisTwo-Container h1 {
     text-align: center;
     color: #741f8a;
     font-size: 36px;
   }
-  .ThemanticAnalysis-Container h3 {
+  .ThemanticAnalysisTwo-Container h3 {
     color: #741f8a;
     font-size: 25.3px;
     padding-top: 50px;
   }
-  .ThemanticAnalysis-Container img {
+  .ThemanticAnalysisTwo-Container img {
     height: auto;
     width: 80%;
   }
   
-  button.get-started-ThemanticAnalysis {
+  button.get-started-ThemanticAnalysisTwo {
       position: relative;
       display: inline-block;
       cursor: pointer;
@@ -41,12 +41,12 @@
       max-width: 50%;
     }
     
-    button.get-started-ThemanticAnalysis {
+    button.get-started-ThemanticAnalysisTwo {
       width: 12rem;
       height: auto;
       
     }
-    button.get-started-ThemanticAnalysis .circle-ThemanticAnalysis {
+    button.get-started-ThemanticAnalysisTwo .circle-ThemanticAnalysisTwo {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       position: relative;
       display: block;
@@ -56,7 +56,7 @@
       background: #FBAA19;
       border-radius: 1.625rem;
     }
-    button.get-started-ThemanticAnalysis .circle-ThemanticAnalysis .icon-ThemanticAnalysis {
+    button.get-started-ThemanticAnalysisTwo .circle-ThemanticAnalysisTwo .icon-ThemanticAnalysisTwo {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       position: absolute;
       top: 0;
@@ -64,20 +64,20 @@
       margin: auto;
       background: #0b504f;
     }
-    button.get-started-ThemanticAnalysis .circle-ThemanticAnalysis .icon-ThemanticAnalysis.arrow-ThemanticAnalysis {
+    button.get-started-ThemanticAnalysisTwo .circle-ThemanticAnalysisTwo .icon-ThemanticAnalysisTwo.arrow-ThemanticAnalysisTwo {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       left: 0.625rem;
       width: 1.125rem;
       height: 0.125rem;
       background: none;
     }
-    .home-button-ThemanticAnalysis{
+    .home-button-ThemanticAnalysisTwo{
       display: flex;
       justify-content: center;
       padding: 20px;
     }
     
-    button.get-started-ThemanticAnalysis .circle-ThemanticAnalysis .icon-ThemanticAnalysis.arrow-ThemanticAnalysis::before {
+    button.get-started-ThemanticAnalysisTwo .circle-ThemanticAnalysisTwo .icon-ThemanticAnalysisTwo.arrow-ThemanticAnalysisTwo::before {
       position: absolute;
       content: '';
       top: -0.25rem;
@@ -89,7 +89,7 @@
       transform: rotate(45deg);
     }
   
-    button.get-started-ThemanticAnalysis .button-text-ThemanticAnalysis {
+    button.get-started-ThemanticAnalysisTwo .button-text-ThemanticAnalysisTwo {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       position: absolute;
       top: 0;
@@ -104,14 +104,14 @@
       text-align: center;
       text-transform: uppercase;
     }
-    button:hover .circle-ThemanticAnalysis {
+    button:hover .circle-ThemanticAnalysisTwo {
       width: 100%;
     }
-    button:hover .circle-ThemanticAnalysis .icon-ThemanticAnalysis.arrow-ThemanticAnalysis {
+    button:hover .circle-ThemanticAnalysisTwo .icon-ThemanticAnalysisTwo.arrow-ThemanticAnalysisTwo {
       background: #0b504f;
       transform: translate(1rem, 0);
     }
-    button:hover .button-text-ThemanticAnalysis {
+    button:hover .button-text-ThemanticAnalysisTwo {
       color: #0b504f;
     }
 

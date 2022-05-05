@@ -63,16 +63,20 @@ const Home = () => {
         <br />
         <h2>To get certified complete the following steps in this website:</h2>
         <br />
-        <br/>
-        <div className="home-bottom" ><img className="home-bottomimg" src="static/image.jpg" alt="" /></div>
+        <br />
+        <div className="home-bottom">
+          <img className="home-bottomimg" src="static/image.jpg" alt="" />
+        </div>
         <br />
 
         <div className="home-button">
           <button class="get-started ">
-            <span class="circle" >
+            <span class="circle">
               <span class="icon arrow"></span>
             </span>
-            <span class="button-text">Get Started</span>
+            <a href="/coursePreQuestionnaire-1">
+              <span class="button-text">Get Started</span>
+            </a>
           </button>
         </div>
       </Container>

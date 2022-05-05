@@ -1,18 +1,20 @@
 import React from "react";
-import "./MindMapExercise.css";
 import { Container } from "react-bootstrap";
+import "./Challenge.css";
 
-const MindMapExercise = () => {
+const ChallengeFour = () => {
   return (
     <div>
-      <Container className="MindMapExercise-Container">
+      <Container className="Challenge-Container">
         <h1>
-        Challenge 4: <br /> For your chosen topic use the diagram above to add specific questions in each branch.
+        Challenge 4:
+        <br /> 
+        For your chosen topic use the diagram above to add specific questions in each branch.
         </h1>
         <h3>"For your chosen topic use the diagram above to add specific questions in each branch."</h3>
         
         <h3>Watch the video and upload your question-mindmap below.</h3>
-        <div className="MindMapExercise-Video-Container">
+        <div className="Challenge-Video-Container">
           <iframe
             width="560"
             height="315"
@@ -23,19 +25,19 @@ const MindMapExercise = () => {
             allowfullscreen
           ></iframe>
         </div>
-        <h3>Draw your own Mind Map Below</h3>
+        <h3 className="text-center">Draw your own Mind Map Below</h3>
         <center>
-          <div className="MindMapExercise-Inputs">
+          <div className="Challenge-Inputs">
               
           </div>
         </center>
 
-        <div className="home-button-MindMapExercise">
-          <button class="get-started-MindMapExercise">
-            <span class="circle-MindMapExercise">
-              <span class="icon-MindMapExercise arrow-MindMapExercise"></span>
+        <div className="home-button-Challenge">
+          <button class="get-started-Challenge">
+            <span class="circle-Challenge">
+              <span class="icon-Challenge arrow-Challenge"></span>
             </span>
-            <span class="button-text-MindMapExercise">Next</span>
+            <a href="discussion-4"><span class="button-text-Challenge">Next</span></a>
           </button>
         </div>
       </Container>
@@ -43,4 +45,4 @@ const MindMapExercise = () => {
   );
 };
 
-export default MindMapExercise;
+export default ChallengeFour;
