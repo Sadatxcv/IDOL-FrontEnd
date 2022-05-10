@@ -52,6 +52,9 @@ function App() {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/LoginAndSignup" element={<LoginAndSignup />} />
+          <Route exact path="/admin" element={<Admin />}>
+            <Route path="addQuestion" element={<Testquestion />} />
+          </Route>
 
           {/* CoursePreQuestionnaires */}
           <Route
@@ -104,7 +107,7 @@ function App() {
 
           {/* Forms */}
           <Route exact path="/Question" element={<Question_form />} />
-          <Route exact path="/test" element={<Testquestion />} />
+
           <Route exact path="/userform" element={<User_form />} />
           <Route exact path="/admin" element={<Admin />} />
         </Routes>

@@ -1,6 +1,6 @@
-import { Button, Typography } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 import React, { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./User_form.css";
 import axios from "axios";
 function User_form(props) {
@@ -25,7 +25,7 @@ function User_form(props) {
     //     ele.question==que ? ele.answer = option : console.log(" ")
     // })
 
-    var k = answer.findIndex((ele) => ele.question == que);
+    var k = answer.findIndex((ele) => ele.question === que);
 
     answer[k].answer = option;
     setAnswer(answer);
@@ -47,7 +47,7 @@ function User_form(props) {
   var post_answer_data = {};
 
   function selectinput(que, option) {
-    var k = answer.findIndex((ele) => ele.question == que);
+    var k = answer.findIndex((ele) => ele.question === que);
 
     answer[k].answer = option;
     setAnswer(answer);
@@ -56,15 +56,15 @@ function User_form(props) {
 
   function selectcheck(e, que, option) {
     var d = [];
-    var k = answer.findIndex((ele) => ele.question == que);
+    var k = answer.findIndex((ele) => ele.question === que);
     if (answer[k].answer) {
       d = answer[k].answer.split(",");
     }
 
-    if (e == true) {
+    if (e === true) {
       d.push(option);
     } else {
-      var n = d.findIndex((el) => el.option == option);
+      var n = d.findIndex((el) => el.option === option);
       d.splice(n, 1);
     }
 
@@ -95,7 +95,7 @@ function User_form(props) {
               <div className="user_form_questions">
                 <Typography
                   style={{
-                    fontSize: "15px",
+
                     fontWeight: "400",
                     letterSpacing: ".1px",
                     lineHeight: "24px",
@@ -109,8 +109,8 @@ function User_form(props) {
                   <div key={index} style={{ marginBottom: "5px" }}>
                     <div style={{ display: "flex" }}>
                       <div className="form-check">
-                        {question.questionType != "radio" ? (
-                          question.questionType != "text" ? (
+                        {question.questionType !== "radio" ? (
+                          question.questionType !== "text" ? (
                             <label>
                               <input
                                 type={question.questionType}
