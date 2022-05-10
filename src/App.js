@@ -38,6 +38,7 @@ import ChallengeFour from "./Component/Pages/Challenges/ChallengeFour";
 import ChallengeFive from "./Component/Pages/Challenges/ChallengeFive";
 import ChallengeSix from "./Component/Pages/Challenges/ChallengeSix";
 import ChallengeSeven from "./Component/Pages/Challenges/ChallengeSeven";
+import Admin from "./Component/Pages/Admin/Admin";
 
 function App() {
   return (
@@ -105,6 +106,7 @@ function App() {
           <Route exact path="/Question" element={<Question_form />} />
           <Route exact path="/test" element={<Testquestion />} />
           <Route exact path="/userform" element={<User_form />} />
+          <Route exact path="/admin" element={<Admin />} />
         </Routes>
       </BrowserRouter>
     </div>
